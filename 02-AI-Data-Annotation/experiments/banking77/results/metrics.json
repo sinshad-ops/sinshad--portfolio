@@ -1,0 +1,53 @@
+{
+  "claims_boundary": "Automatic classifier agreement with published benchmark labels; not personal annotator accuracy, production accuracy or model safety certification",
+  "dataset": "BANKING77",
+  "labels_origin": "Published annotations from original dataset authors; no new human annotation performed",
+  "majority_baseline": {
+    "accuracy": 0.012987012987012988,
+    "correct": 40,
+    "label_count": 77,
+    "macro_f1": 0.00033300033300033305,
+    "n": 3080,
+    "top3_accuracy": 0.012987012987012988
+  },
+  "majority_intent": "card_payment_fee_charged",
+  "model_disagreements": 435,
+  "published_test_metrics": {
+    "accuracy": 0.8587662337662337,
+    "correct": 2645,
+    "label_count": 77,
+    "macro_f1": 0.85792295772106,
+    "n": 3080,
+    "top3_accuracy": 0.9516233766233766
+  },
+  "review_queue_rows": 535,
+  "source_license": "CC-BY-4.0",
+  "source_qa": {
+    "conflicting_label_groups": 0,
+    "duplicate_extra_rows": {
+      "test": 1,
+      "train": 4
+    },
+    "normalization": "NFKC + casefold + collapse whitespace",
+    "rows": {
+      "test": 3080,
+      "train": 10003
+    },
+    "test_rows_with_train_text": 7,
+    "train_test_overlap_unique_texts": 7
+  },
+  "source_revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "split_counts": {
+    "test": 3080,
+    "train": 10003
+  },
+  "train_text_disjoint_test_metrics": {
+    "accuracy": 0.8584445167588676,
+    "correct": 2638,
+    "label_count": 77,
+    "macro_f1": 0.8575329352055806,
+    "n": 3073,
+    "top3_accuracy": 0.9515131793036121
+  },
+  "vocabulary_size": 22266
+}
