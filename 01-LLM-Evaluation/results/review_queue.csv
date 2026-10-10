@@ -1,0 +1,6 @@
+category,id,judge_preference,provisional_preference,reason,status
+summarization,L28,A,tie,provisional author reference and AI judge disagree,manual_review_pending
+arithmetic,L35,A,tie,provisional author reference and AI judge disagree,manual_review_pending
+coding,L40,B,tie,provisional author reference and AI judge disagree,manual_review_pending
+instruction_following,L45,A,tie,provisional author reference and AI judge disagree,manual_review_pending
+extraction,L50,A,tie,provisional author reference and AI judge disagree,manual_review_pending
