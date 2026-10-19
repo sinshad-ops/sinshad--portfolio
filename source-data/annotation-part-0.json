@@ -1,0 +1,660 @@
+[
+  {
+    "id": "A1",
+    "text": "I was charged twice for the same monthly plan, and the second charge appeared after I had already canceled. Please review the duplicate payment and return the extra amount. I appreciate the quick service normally, but this billing issue is making me uneasy.",
+    "topic": "billing",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "monthly plan",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant request concerns a duplicate charge and possible billing correction.",
+    "ambiguous": false
+  },
+  {
+    "id": "A2",
+    "text": "I cannot sign in after changing my password yesterday. The reset link says it has expired immediately, even when I request a fresh one. Could someone check whether my account is locked? I need access before my next scheduled shipment, but it is not an emergency.",
+    "topic": "account",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "yesterday",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary actionable need is restoring account access rather than changing a shipment.",
+    "ambiguous": false
+  },
+  {
+    "id": "A3",
+    "text": "The tracking page has shown “label created” since Monday, and the package still has not moved. This was supposed to arrive for a class project. Can you confirm whether it is actually with the carrier or arrange another delivery option?",
+    "topic": "delivery",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [
+      {
+        "text": "Monday",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant issue is a stalled shipment and the requested resolution concerns delivery status or replacement.",
+    "ambiguous": false
+  },
+  {
+    "id": "A4",
+    "text": "The desktop application opens normally, but exporting a report freezes at 92 percent every time. I have restarted it and tried a smaller file without success. Is there a known fix or a way to retrieve the report without losing my changes?",
+    "topic": "technical",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the message centers on a repeatable software failure during report export.",
+    "ambiguous": false
+  },
+  {
+    "id": "A5",
+    "text": "My return was marked received last week, but I still have not seen the refund. The original purchase was expensive, so I would really appreciate an update or an estimated completion date. The return instructions were clear and helpful, which I wanted to mention.",
+    "topic": "refund",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "last week",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant actionable request is checking the status of a pending refund.",
+    "ambiguous": false
+  },
+  {
+    "id": "A6",
+    "text": "Could you explain how your replacement process works for items that arrive damaged? I am not reporting a specific order yet; I only want to understand the steps, evidence needed, and usual timeline before purchasing. A plain-language explanation would be very helpful.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: this is a general policy question without a specific account or transaction to resolve.",
+    "ambiguous": false
+  },
+  {
+    "id": "A7",
+    "text": "The invoice total is higher than the price shown at checkout because a service fee appeared afterward. I do not object to reasonable fees, but this one was not visible before payment. Please explain the charge and confirm whether the displayed price was incorrect.",
+    "topic": "billing",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "service fee",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the customer primarily requests clarification of an unexpected billing amount.",
+    "ambiguous": false
+  },
+  {
+    "id": "A8",
+    "text": "I want to update the email used for notifications, but the account settings page keeps reverting to the old value. I have not lost access, and there is no immediate deadline. Please tell me whether this requires verification or if the settings page is malfunctioning.",
+    "topic": "account",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the main request is an account-profile update, with a possible settings defect as secondary context.",
+    "ambiguous": false
+  },
+  {
+    "id": "A9",
+    "text": "The courier left a delivery notice, but there is no information about where the parcel can be collected. The tracking page only says “attempted delivery.” Could you provide the next step? I am available tomorrow afternoon, though I can wait if another attempt is already planned.",
+    "topic": "delivery",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "tomorrow afternoon",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant need is obtaining actionable information about a missed delivery.",
+    "ambiguous": true
+  },
+  {
+    "id": "A10",
+    "text": "The mobile app shows a blank screen after I tap the subscription tab. Reinstalling did not help, although the rest of the app works. Could you investigate? I can continue using the service through the browser for now, so this is inconvenient rather than urgent.",
+    "topic": "technical",
+    "sentiment": "negative",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "mobile app",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the central issue is a reproducible application display failure.",
+    "ambiguous": false
+  },
+  {
+    "id": "A11",
+    "text": "I returned the unopened accessory because it was the wrong size, but the portal now says the return cannot be matched. Please locate the return and issue the refund when possible. I am not sure whether the carrier scan or the return form caused the problem.",
+    "topic": "refund",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "accessory",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary actionable request is resolving a return mismatch so the refund can proceed.",
+    "ambiguous": true
+  },
+  {
+    "id": "A12",
+    "text": "What is the difference between standard and priority support? I am considering the upgrade for a small team, but I need to understand response windows and coverage before deciding. No change is needed on my account today; this is just a request for clear information.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "priority support",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: this is an informational comparison about support offerings, not an active service problem.",
+    "ambiguous": false
+  },
+  {
+    "id": "A13",
+    "text": "A payment for the annual membership was declined, but my bank says the authorization never reached them. I do not want repeated attempts or a duplicate charge. Please tell me whether the membership remains active and how I can complete payment safely.",
+    "topic": "billing",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [
+      {
+        "text": "annual membership",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant request concerns failed payment handling and preventing unintended billing.",
+    "ambiguous": false
+  },
+  {
+    "id": "A14",
+    "text": "My account dashboard says verification is incomplete even though I submitted the requested document earlier today. I cannot access the reporting section until it clears. Could you confirm whether the upload arrived or tell me if another step is required?",
+    "topic": "account",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [
+      {
+        "text": "earlier today",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary issue is a blocked account verification workflow.",
+    "ambiguous": false
+  },
+  {
+    "id": "A15",
+    "text": "The package arrived two days later than the estimate, but everything inside is in excellent condition. I mainly want to know whether the tracking estimate was recalculated or whether the delay was temporary. There is no need for replacement; I am asking for an explanation.",
+    "topic": "delivery",
+    "sentiment": "mixed",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "two days later",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the customer primarily seeks an explanation for a completed delivery delay.",
+    "ambiguous": false
+  },
+  {
+    "id": "A16",
+    "text": "Notifications stopped arriving after the latest update, although the settings still show them enabled. I have checked both Wi-Fi and mobile data, so it does not seem network-related. Please help restore alerts; missing one is inconvenient, but I can check manually for now.",
+    "topic": "technical",
+    "sentiment": "negative",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "latest update",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant actionable problem is a notification feature failure after an update.",
+    "ambiguous": false
+  },
+  {
+    "id": "A17",
+    "text": "I canceled the order before it shipped, yet the refund amount is still listed as pending. I understand processing may take some time, but the status has not changed since cancellation. Could you verify that the refund was actually submitted rather than merely requested?",
+    "topic": "refund",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the message focuses on verifying a pending cancellation refund.",
+    "ambiguous": false
+  },
+  {
+    "id": "A18",
+    "text": "Do you offer invoices in a downloadable format for expense records? I am not asking about a particular charge, and there is no urgency. A description of where invoices are stored and how long they remain available would answer my question.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: this is a general documentation and account-feature question.",
+    "ambiguous": false
+  },
+  {
+    "id": "A19",
+    "text": "The card on file expired, and the system keeps sending payment-failure notices even though I have added a replacement card. Please confirm which payment method will be charged and whether the notices can stop. I do not want the service suspended unexpectedly.",
+    "topic": "billing",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the primary request concerns updating payment handling and avoiding service interruption.",
+    "ambiguous": false
+  },
+  {
+    "id": "A20",
+    "text": "I accidentally enabled a setting that hides completed projects, and now I cannot find them in the workspace. Nothing appears deleted. Could you explain how to restore the normal view? I am worried, but there is no external deadline and I can wait for instructions.",
+    "topic": "account",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant need is restoring visibility of account data through a setting change.",
+    "ambiguous": false
+  },
+  {
+    "id": "A21",
+    "text": "The shipment was split into two parcels, but only one tracking number is visible in my order history. The first parcel arrived safely; the second has no movement since the dispatch notice. Please confirm whether it is still traveling or was accidentally omitted.",
+    "topic": "delivery",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "two parcels",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the main actionable issue is locating or confirming the missing portion of a split delivery.",
+    "ambiguous": false
+  },
+  {
+    "id": "A22",
+    "text": "The file uploader accepts small documents but fails silently when I select a larger one. There is no error message, and refreshing does not help. Could you confirm the size limit or investigate the upload behavior? I can postpone this task briefly, though it blocks an important workflow.",
+    "topic": "technical",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant request is troubleshooting a file-upload limitation or defect.",
+    "ambiguous": true
+  },
+  {
+    "id": "A23",
+    "text": "I received a refund confirmation, but the amount is smaller than the item price. Shipping was free, so I do not understand the difference. Please provide a breakdown and correct it if the deduction was accidental. The product itself was excellent, which makes this especially confusing.",
+    "topic": "refund",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "product",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary action is investigating and potentially correcting an incomplete refund.",
+    "ambiguous": false
+  },
+  {
+    "id": "A24",
+    "text": "Is there a way to pause notifications without canceling the service? I will be unavailable for a short period and do not want messages filling the inbox. Please explain the available options; nothing needs to be changed unless I confirm after understanding them.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: this is a general question about notification controls and service options.",
+    "ambiguous": false
+  },
+  {
+    "id": "A25",
+    "text": "The receipt shows a tax amount that differs from the estimate at checkout. I understand taxes can vary by destination, but the change was substantial. Could you explain which calculation was used and whether the original estimate or final amount is correct?",
+    "topic": "billing",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant request is clarification of a tax-related billing discrepancy.",
+    "ambiguous": false
+  },
+  {
+    "id": "A26",
+    "text": "I received an alert that my account was accessed from a new device, but I do not recognize the activity. I have already changed my password and enabled extra verification. Please review the alert and tell me whether any further account protection is needed.",
+    "topic": "account",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the message primarily requests account-security review after an unrecognized access alert.",
+    "ambiguous": false
+  },
+  {
+    "id": "A27",
+    "text": "The delivery window changed from morning to evening without notice. I can still receive it, but the new time is difficult. Is there an option to leave a delivery preference or reschedule for another day? I am unsure whether changing it now would delay the parcel further.",
+    "topic": "delivery",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "morning",
+        "label": "DATE"
+      },
+      {
+        "text": "evening",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant need concerns changing or managing a delivery window.",
+    "ambiguous": true
+  },
+  {
+    "id": "A28",
+    "text": "Search results are loading, but selecting any result sends me back to the home screen. This started after I cleared the application cache. Can you suggest a fix that will not remove saved work? The issue is frustrating, although I can use filters as a temporary workaround.",
+    "topic": "technical",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "application cache",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary issue is a navigation defect affecting search results.",
+    "ambiguous": false
+  },
+  {
+    "id": "A29",
+    "text": "My return label was generated, but the return page now says the label is unavailable. I have not shipped the package yet. Please issue a replacement label or explain whether I should wait, because the return deadline may be approaching and I do not want to miss it.",
+    "topic": "refund",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [
+      {
+        "text": "return label",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant actionable request is obtaining a usable return label to preserve refund eligibility.",
+    "ambiguous": false
+  },
+  {
+    "id": "A30",
+    "text": "Can you clarify whether trial accounts include data export? I am evaluating the service for a community project and want to understand the limits before uploading anything. This is only a policy question, not a request to activate or cancel a plan.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "trial accounts",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the message asks for general product-policy information before use.",
+    "ambiguous": false
+  },
+  {
+    "id": "A31",
+    "text": "I was billed for an add-on I never selected, and the charge appears alongside my regular subscription. Please remove the add-on and reverse the charge. I like the core service and would prefer to keep it, but I need confirmation that this will not happen again.",
+    "topic": "billing",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "add-on",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant request is correcting an unauthorized or unexpected add-on charge.",
+    "ambiguous": false
+  },
+  {
+    "id": "A32",
+    "text": "The account shows an old subscription as active even though I switched plans. I do not see two current charges, but the labels are confusing. Could you verify which plan is actually enabled and remove the outdated display if possible?",
+    "topic": "account",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "old subscription",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary need is clarifying and correcting account-plan status.",
+    "ambiguous": false
+  },
+  {
+    "id": "A33",
+    "text": "The carrier marked my parcel delivered, but it is not at the usual drop-off location and nearby staff have not seen it. Could you open a delivery investigation? I am not certain whether it was misplaced or scanned early, so guidance on the next step would help.",
+    "topic": "delivery",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant actionable request is initiating an investigation for a missing marked-delivered parcel.",
+    "ambiguous": true
+  },
+  {
+    "id": "A34",
+    "text": "The audio cuts out whenever I join a shared session, but works normally when I use the service alone. I tested two networks and restarted the device. Please investigate the collaboration mode; it is affecting a meeting later, though I may have a backup option.",
+    "topic": "technical",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the message reports a reproducible technical failure in shared sessions.",
+    "ambiguous": false
+  },
+  {
+    "id": "A35",
+    "text": "The refund was approved, but it has not appeared in the account used for payment. Support previously said it would be quick, so I am disappointed by the delay. Please check the transfer status and let me know if any action is needed from me.",
+    "topic": "refund",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the primary issue is a delayed approved refund and its transfer status.",
+    "ambiguous": false
+  },
+  {
+    "id": "A36",
+    "text": "Where can I find the accessibility settings, and which features do they control? I am helping someone evaluate the interface, but there is no active problem or account change needed. A current overview would be more useful than troubleshooting steps.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "accessibility settings",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: this is a general request for product-feature information.",
+    "ambiguous": false
+  },
+  {
+    "id": "A37",
+    "text": "The payment screen keeps displaying an outdated currency symbol, although the final amount seems correct. I do not want to submit another payment until this is clear. Could you confirm whether the symbol is cosmetic or whether it indicates the wrong billing currency?",
+    "topic": "billing",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant concern is verifying billing currency before another payment attempt.",
+    "ambiguous": true
+  },
+  {
+    "id": "A38",
+    "text": "I need to close the account, but the cancellation button is disabled after I sign in. I have no outstanding balance that I know of. Please explain the required steps and confirm whether cancellation can be completed manually if the button remains unavailable.",
+    "topic": "account",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the primary actionable request is completing an account cancellation blocked by the interface.",
+    "ambiguous": false
+  },
+  {
+    "id": "A39",
+    "text": "The estimated arrival date keeps changing each morning, and now the tracking page shows no date at all. I understand delays happen, but I need to decide whether to make alternate arrangements. Can you provide the best available estimate or explain the current hold?",
+    "topic": "delivery",
+    "sentiment": "mixed",
+    "urgency": "high",
+    "entities": [
+      {
+        "text": "each morning",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant request is obtaining a reliable delivery estimate for planning purposes.",
+    "ambiguous": false
+  },
+  {
+    "id": "A40",
+    "text": "The integration connected successfully, but new records are not appearing in the dashboard. Existing records still load, so the connection may be authorized but not syncing. Please help identify the failed step; I can wait until tomorrow if logs are needed.",
+    "topic": "technical",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the central issue is a technical synchronization failure after integration setup.",
+    "ambiguous": false
+  },
+  {
+    "id": "A41",
+    "text": "I was told the refund would include the expedited shipping fee because the item arrived damaged, but the confirmation only covers the item. Could you review the adjustment? I am grateful the return process was straightforward, yet the missing shipping amount still needs attention.",
+    "topic": "refund",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "expedited shipping fee",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant request is correcting a refund that omitted an expected shipping adjustment.",
+    "ambiguous": false
+  },
+  {
+    "id": "A42",
+    "text": "What are the retention rules for archived workspace content? I am planning a cleanup and want to know whether archived material can be restored later. Nothing has been deleted yet, and I am not asking support to perform any changes right now.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "archived workspace content",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: this is a general policy question about archived content and restoration.",
+    "ambiguous": false
+  },
+  {
+    "id": "A43",
+    "text": "The receipt lists a recurring charge even though I selected a one-time purchase. Please check whether I accidentally chose the wrong option or whether the order was converted afterward. I want the recurring billing stopped before another payment is attempted.",
+    "topic": "billing",
+    "sentiment": "negative",
+    "urgency": "high",
+    "entities": [
+      {
+        "text": "one-time purchase",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the main request is preventing and correcting an unexpected recurring billing setup.",
+    "ambiguous": false
+  },
+  {
+    "id": "A44",
+    "text": "I cannot add a second authorized user because the invitation link returns an access error. The first user is working normally, so the account itself seems fine. Please check the invitation process; adding this person would be useful soon, but it can wait a day.",
+    "topic": "account",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant account action is adding an authorized user through a failing invitation flow.",
+    "ambiguous": false
+  },
+  {
+    "id": "A45",
+    "text": "The delivery arrived in good condition, but one component listed on the packing slip was missing. I am unsure whether it ships separately or was overlooked. Could you check the shipment contents and arrange delivery of the missing component if necessary?",
+    "topic": "delivery",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "packing slip",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "component",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the primary actionable request concerns a possibly incomplete delivery.",
+    "ambiguous": true
+  },
+  {
+    "id": "A46",
+    "text": "The password manager extension works in one browser but not another, where the sign-in button does nothing. I have already enabled the extension and restarted the browser. Could you confirm compatibility or suggest a workaround that does not require removing saved settings?",
+    "topic": "technical",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "password manager extension",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the message focuses on a browser-specific technical compatibility problem.",
+    "ambiguous": false
+  },
+  {
+    "id": "A47",
+    "text": "I canceled within the stated window, but the refund screen says the request is ineligible. I may have misunderstood which cutoff applied, so please review the timing rather than assuming the system is wrong. If the refund cannot be granted, explain the reason clearly.",
+    "topic": "refund",
+    "sentiment": "mixed",
+    "urgency": "medium",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the dominant request is reviewing refund eligibility after cancellation.",
+    "ambiguous": true
+  },
+  {
+    "id": "A48",
+    "text": "Can you explain whether scheduled maintenance affects stored reports or only access to the dashboard? I am preparing work for next week and want to plan around any interruption. This is a planning question, not a report of current downtime.",
+    "topic": "general",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "entities": [
+      {
+        "text": "next week",
+        "label": "DATE"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: this is a general operational-information request about maintenance impact.",
+    "ambiguous": false
+  },
+  {
+    "id": "A49",
+    "text": "The payment was reversed, but the service still shows an active renewal for the same period. I do not want access interrupted, yet I also do not want to be charged again while the status is inconsistent. Please reconcile the payment and subscription records.",
+    "topic": "billing",
+    "sentiment": "mixed",
+    "urgency": "high",
+    "entities": [],
+    "rationale": "AI-authored provisional annotation: the primary actionable issue is reconciling a reversed payment with an active renewal status.",
+    "ambiguous": false
+  },
+  {
+    "id": "A50",
+    "text": "I can view the team workspace but cannot create a new project, while another member can do so. The permission message is vague, and I am not sure whether my role changed or the workspace has reached a limit. Please check the access settings and advise.",
+    "topic": "account",
+    "sentiment": "negative",
+    "urgency": "medium",
+    "entities": [
+      {
+        "text": "team workspace",
+        "label": "PRODUCT"
+      }
+    ],
+    "rationale": "AI-authored provisional annotation: the dominant request concerns account permissions preventing project creation.",
+    "ambiguous": true
+  }
+]
