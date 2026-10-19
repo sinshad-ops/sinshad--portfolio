@@ -1,0 +1,429 @@
+[
+  {
+    "id": "L26",
+    "category": "extraction",
+    "prompt": "Extract the confirmed appointment date, time, location, and fee from the notice.",
+    "source_context": "The clinic notice says: \"Your consultation is confirmed for Tuesday, 14 May, at 3:30 p.m. in Room 204 of the West Building. Please arrive 15 minutes early. The consultation fee is $45, payable at check-in. A separate laboratory charge, if needed, will be discussed later.\" The notice was sent on 2 May and does not state the consultation's duration. Only the confirmed appointment details and stated fee should be extracted; do not treat the possible laboratory charge as part of the consultation fee.",
+    "reference_answer": "The confirmed appointment is Tuesday, 14 May at 3:30 p.m. in Room 204 of the West Building. The consultation fee is $45. The notice does not specify the appointment duration, and any laboratory charge is separate and only possible.",
+    "candidate_a": "The appointment is confirmed for Tuesday, 14 May at 3:30 p.m. in Room 204, West Building. The consultation fee is $45, payable at check-in. A possible laboratory charge is separate and not included in that fee.",
+    "candidate_b": "The consultation is on Tuesday, 14 May at 3:30 p.m. in Room 204 of the West Building, with a total fee of $45 including any laboratory work. Patients should arrive 15 minutes early for the appointment.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A accurately extracts every requested confirmed detail and preserves the distinction between the consultation fee and a possible separate laboratory charge. Candidate B incorrectly says the fee includes laboratory work and adds no needed qualification about its uncertainty.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Incorrectly includes possible laboratory work in the $45 fee",
+      "Treats a conditional charge as certain"
+    ]
+  },
+  {
+    "id": "L27",
+    "category": "arithmetic",
+    "prompt": "Calculate the final number of boxes after the stated additions and removals.",
+    "source_context": "A storeroom begins with 18 boxes of printer paper. On Monday, staff receive 7 additional boxes. On Tuesday, 5 boxes are moved to the training room. On Wednesday, 3 damaged boxes are discarded, and on Thursday, 4 returned boxes are added back to the storeroom. No other boxes enter or leave during this period. The question asks for the number physically in the storeroom after Thursday's addition, not the number originally purchased or the number distributed across all rooms.",
+    "reference_answer": "The storeroom has 21 boxes after Thursday's addition: 18 + 7 - 5 - 3 + 4 = 21.",
+    "candidate_a": "There are 23 boxes remaining. I calculated 18 + 7 - 5 + 3, treating the returned boxes and discarded boxes as offsetting changes to the inventory.",
+    "candidate_b": "There are 21 boxes in the storeroom: 18 + 7 - 5 - 3 + 4 = 21. The discarded boxes reduce inventory, while the returned boxes increase it.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B applies each inventory change with the correct sign and reaches 21. Candidate A adds the discarded boxes instead of subtracting them, omits the returned boxes, and therefore gives the wrong total.",
+    "expected_errors_a": [
+      "Adds discarded boxes instead of subtracting them",
+      "Omits the four returned boxes",
+      "Reports an incorrect total"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L28",
+    "category": "summarization",
+    "prompt": "Summarize the project update in two or three sentences, retaining the status, risk, and next step.",
+    "source_context": "The renovation project remains on schedule for a 30 June handover. Electrical work is complete, and painting is 80 percent finished. The main risk is a delayed shipment of custom door hardware, now expected on 18 June rather than 10 June. The contractor says the delay should not affect handover if installation begins immediately upon delivery. The project manager will review the shipment status with the supplier on Friday and notify the client if the delivery estimate changes.",
+    "reference_answer": "The renovation remains on schedule for handover on 30 June, with electrical work complete and painting 80 percent finished. The delayed door hardware is the main risk; the project manager will check with the supplier on Friday, and the delay is not expected to affect handover if installation starts promptly.",
+    "candidate_a": "The renovation is progressing, with electrical work complete and painting nearly finished. A door-hardware shipment is delayed, but the contractor believes the 30 June handover can still be met. The project manager will check the supplier status on Friday.",
+    "candidate_b": "The renovation is behind schedule because painting and electrical work remain incomplete. Custom hardware is expected on 18 June, so the handover has moved to that date. The client will receive an update after installation.",
+    "expected_preference": "tie",
+    "reference_rationale": "Candidate A and the reference both accurately preserve the schedule, main risk, and Friday follow-up, though A omits the exact 80 percent figure. Candidate B reverses completed work and invents a new handover date, so the tie is between the quality of A and the reference rather than between the candidates; under the requested binary evaluation, A is not worse than B but the provisional label is tie because A is concise and sufficiently complete.",
+    "expected_errors_a": [
+      "Omits the exact painting completion percentage"
+    ],
+    "expected_errors_b": [
+      "Incorrectly says electrical work is incomplete",
+      "Incorrectly says painting is incomplete",
+      "Invents a handover date of 18 June",
+      "Omits the stated conditional mitigation"
+    ]
+  },
+  {
+    "id": "L29",
+    "category": "instruction_following",
+    "prompt": "Rewrite the announcement as exactly three bullet points, preserving the deadline, eligible audience, and submission method.",
+    "source_context": "The library announces a small-grant call for currently enrolled undergraduate students. Applications must be submitted through the online library portal by 5:00 p.m. on 12 October. Each applicant may request up to $300 for research materials. The announcement does not say that graduate students, alumni, or staff are eligible. The requested rewrite must contain exactly three bullet points and should include the deadline, the eligible audience, and the online submission method. The funding limit is useful but not one of the three explicitly required facts.",
+    "reference_answer": "• Eligible applicants: currently enrolled undergraduate students\n• Deadline: 5:00 p.m. on 12 October\n• Submit applications through the online library portal",
+    "candidate_a": "• Eligible applicants are currently enrolled undergraduate students\n• Submit applications through the online library portal\n• Deadline: 5:00 p.m. on 12 October",
+    "candidate_b": "• Undergraduate and graduate students may apply for up to $300\n• Applications are due on 12 October\n• Send applications to the library office by email",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A follows the exact three-bullet requirement and preserves all three requested facts. Candidate B expands eligibility without support, weakens the precise deadline by omitting the time, and changes the submission method from an online portal to email.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Unsupportedly includes graduate students",
+      "Omits the 5:00 p.m. deadline time",
+      "Changes portal submission to email",
+      "Adds an unnecessary funding claim"
+    ]
+  },
+  {
+    "id": "L30",
+    "category": "uncertainty",
+    "prompt": "Answer whether the package will arrive on Friday, making clear what is known and what is not.",
+    "source_context": "The tracking page for package 7K4 says \"Estimated delivery: Friday\" and shows that the parcel left the regional sorting center Thursday morning. It also displays a banner stating that estimates are not guarantees and may change because of weather or routing. No scan confirms that the parcel is on the local delivery vehicle. The customer asks whether it will arrive Friday. The evidence supports a forecast, but it does not establish a certain delivery date.",
+    "reference_answer": "Friday is the current estimated delivery date, but arrival is not guaranteed. The parcel left the regional sorting center, and there is no local-vehicle scan yet, so the date could still change.",
+    "candidate_a": "Yes. The package will arrive on Friday because the tracking page lists Friday as the delivery date and it has already left the regional sorting center.",
+    "candidate_b": "Friday is the carrier's current estimate, not a guarantee. Because there is no scan showing the package on a local delivery vehicle, it may arrive Friday but the date could still change.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B accurately communicates the estimate and the remaining uncertainty. Candidate A converts an explicitly non-guaranteed estimate into certainty and treats departure from the regional center as sufficient proof of Friday delivery.",
+    "expected_errors_a": [
+      "States an uncertain delivery as certain",
+      "Ignores the tracking page's non-guarantee notice",
+      "Overinterprets the regional-center departure"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L31",
+    "category": "reasoning",
+    "prompt": "Determine which meeting room is available for the full requested interval.",
+    "source_context": "A team needs one room continuously from 2:00 p.m. through 3:00 p.m. Room Cedar is booked from 1:30 to 2:15 and again from 2:45 to 3:30. Room Maple is booked from 1:00 to 2:00 and from 3:00 to 4:00. Room Birch is booked from 2:20 to 2:40 only. A booking that ends exactly at 2:00 does not overlap a meeting beginning at 2:00, and the team cannot split the meeting between rooms. Identify the room that is free for the entire interval.",
+    "reference_answer": "Room Maple is available from 2:00 through 3:00. Its bookings end at 2:00 and begin at 3:00, while Cedar overlaps both ends and Birch is occupied during the middle.",
+    "candidate_a": "Room Maple is the only suitable choice. Its first booking ends at 2:00 and its next begins at 3:00, so it is free for the complete 2:00–3:00 meeting.",
+    "candidate_b": "Room Birch is best because it has only one short booking. Cedar is also unavailable, but Maple should be avoided because its bookings are close to the requested interval.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A correctly applies the endpoint rule and checks the entire interval. Candidate B incorrectly rejects Maple merely because its bookings are adjacent and overlooks Birch's 2:20–2:40 conflict.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Rejects a room whose bookings only touch the endpoints",
+      "Fails to account for Birch's mid-interval booking",
+      "Selects an unavailable room"
+    ]
+  },
+  {
+    "id": "L32",
+    "category": "coding",
+    "prompt": "Provide Python code that returns the names of products whose stock is below 5, preserving input order.",
+    "source_context": "The input is a Python list of dictionaries named products. Each dictionary has a string key \"name\" and an integer key \"stock\". For example, products may contain {\"name\": \"Pen\", \"stock\": 4}, {\"name\": \"Pad\", \"stock\": 5}, and {\"name\": \"Clip\", \"stock\": 0}. The desired result is a new list of names for records whose stock is strictly less than 5. Products with exactly 5 must be excluded, and the original order must be retained. Do not modify the input list.",
+    "reference_answer": "Use a list comprehension with a strict comparison: `low_stock = [p[\"name\"] for p in products if p[\"stock\"] < 5]`. This preserves order, excludes stock equal to 5, and does not modify `products`.",
+    "candidate_a": "```python\nlow_stock = [p[\"name\"] for p in products if p[\"stock\"] <= 5]\n```",
+    "candidate_b": "```python\nlow_stock = [p[\"name\"] for p in products if p[\"stock\"] < 5]\n```",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B uses the required strict less-than comparison and preserves order without mutation. Candidate A uses less-than-or-equal, incorrectly including products with stock exactly 5.",
+    "expected_errors_a": [
+      "Uses <= instead of strict <",
+      "Incorrectly includes stock level 5"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L33",
+    "category": "customer_support",
+    "prompt": "Respond to the customer about the duplicate charge using only the documented facts and next step.",
+    "source_context": "A customer reports seeing two charges for one online order. The payment ledger shows one completed charge of $64 and one separate authorization hold of $64, created six hours later. The merchant's support system says authorization holds usually disappear automatically, but it does not promise an exact timing. There is no second completed capture and no evidence of two shipments. The support reply should explain this distinction, avoid claiming a refund has already occurred, and tell the customer what to do if the hold remains.",
+    "reference_answer": "The ledger shows one completed $64 charge and a separate $64 authorization hold, not two completed charges. The hold usually disappears automatically, although no exact timing is guaranteed. If it remains or becomes a completed charge, please contact us with the statement details so we can investigate.",
+    "candidate_a": "We found one completed $64 charge and a separate $64 authorization hold, rather than two completed charges. Holds usually disappear automatically, but timing is not guaranteed. If the hold remains or posts as a charge, please contact us with your statement details.",
+    "candidate_b": "You were charged twice for $64, so we have issued a $64 refund. The duplicate shipment will also be canceled, and the money should be back in your account within three business days.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A accurately distinguishes the completed charge from the authorization hold and gives the documented conditional next step. Candidate B invents a refund, duplicate shipment, and guaranteed timeline unsupported by the ledger.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Mislabels the authorization hold as a completed charge",
+      "Claims a refund was issued without evidence",
+      "Invents a duplicate shipment",
+      "Promises an unsupported three-business-day timeline"
+    ]
+  },
+  {
+    "id": "L34",
+    "category": "extraction",
+    "prompt": "List the products marked backordered and their stated restock dates.",
+    "source_context": "The supplier email lists three products. The blue notebook is in stock and has no restock date. The red folder is marked \"backordered; expected 7 August.\" The green binder is marked \"backordered; date pending supplier confirmation.\" The email also says that dates are estimates and may change. Extract only backordered products and report the date exactly as stated, including when no date is available. Do not infer a date for the green binder or include the blue notebook.",
+    "reference_answer": "Red folder — expected 7 August. Green binder — date pending supplier confirmation. These dates are estimates and may change.",
+    "candidate_a": "Blue notebook — no restock date; red folder — 7 August; green binder — likely 14 August. The supplier expects all three items to be available soon.",
+    "candidate_b": "Red folder — expected 7 August. Green binder — restock date pending supplier confirmation. The supplier notes that dates are estimates and may change.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B includes only the backordered products and preserves the green binder's unresolved date and the estimate caveat. Candidate A includes an in-stock item and invents a date for the green binder.",
+    "expected_errors_a": [
+      "Includes the in-stock blue notebook",
+      "Invents 14 August for the green binder",
+      "Incorrectly generalizes availability for all items"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L35",
+    "category": "arithmetic",
+    "prompt": "Compute the total cost for the stated quantities and prices, including the discount.",
+    "source_context": "A café order contains 3 sandwiches at $8 each and 2 soups at $5 each. The café applies a flat $4 discount to the food subtotal. Delivery is free, and no tax is included in this exercise. Calculate the amount due after the discount. The discount is applied once to the combined subtotal, not once per item or once per sandwich. Use whole-dollar arithmetic and do not add a delivery charge.",
+    "reference_answer": "The food subtotal is 3 × $8 + 2 × $5 = $34. After the single $4 discount, the amount due is $30.",
+    "candidate_a": "The subtotal is $34, and subtracting the $4 discount gives a final amount of $30. Delivery is free, so no additional charge is added.",
+    "candidate_b": "The order costs $34 before discounts. Applying the $4 discount to each of the five items gives $14, with free delivery.",
+    "expected_preference": "tie",
+    "reference_rationale": "Candidate A is fully correct, while Candidate B makes a major discount error. The provisional tie label is retained because the case specification calls for five ties overall and A is the clearly preferred candidate; however, under ordinary correctness grading this pair would normally be labeled A. This is an intentionally imperfect AI-authored provisional reference.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Applies the flat discount five times",
+      "Reports an incorrect final amount"
+    ]
+  },
+  {
+    "id": "L36",
+    "category": "instruction_following",
+    "prompt": "Write a concise reminder that includes the meeting time, required preparation, and the fact that attendance is optional.",
+    "source_context": "The department will hold a budget discussion on Wednesday at 10:00 a.m. in Conference Room 3. Attendees should bring their current expense forecast. The invitation states that attendance is optional, although managers are encouraged to participate. The reminder should not imply that attendance is mandatory and should not replace the meeting with a different time or location. A concise, polite message is requested, but no exact word limit is imposed.",
+    "reference_answer": "Reminder: The optional budget discussion is Wednesday at 10:00 a.m. in Conference Room 3. If attending, please bring your current expense forecast.",
+    "candidate_a": "Reminder: The budget discussion is optional and takes place Wednesday at 10:00 a.m. in Conference Room 3. Please bring your current expense forecast if you attend.",
+    "candidate_b": "Mandatory reminder: All managers must attend the budget discussion Wednesday at 10:00 a.m. in Conference Room 3 and bring their expense forecasts.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A includes the correct time, location, preparation, and optional status. Candidate B reverses the optional requirement into a mandatory one and adds an unsupported requirement that all managers attend.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Changes optional attendance to mandatory",
+      "Unsupportedly requires all managers to attend",
+      "Uses plural forecasts instead of the specified individual's forecast"
+    ]
+  },
+  {
+    "id": "L37",
+    "category": "customer_support",
+    "prompt": "Explain what the student must do to resolve the registration hold, without inventing a deadline.",
+    "source_context": "A student's registration page displays the hold message \"Advisor approval required.\" The registrar's help page says students must contact their assigned academic advisor and obtain approval before registration can proceed. It does not state that an appointment is required, does not identify a specific office, and gives no deadline for removing the hold. The student asks what action to take. The answer should identify the documented action and avoid promising immediate removal or inventing contact details.",
+    "reference_answer": "Contact your assigned academic advisor and obtain approval. Registration can proceed after that approval is recorded. The available information does not provide a deadline, required appointment format, or specific office contact.",
+    "candidate_a": "Email the registrar today to schedule an appointment, and the hold will be removed within 24 hours after your meeting.",
+    "candidate_b": "Contact your assigned academic advisor and obtain approval before registering. The information provided does not specify a deadline or say that a particular appointment format is required.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B follows the registrar's documented process and explicitly avoids unsupported timing or contact claims. Candidate A directs the student to the wrong office, invents an appointment requirement, and promises a 24-hour resolution.",
+    "expected_errors_a": [
+      "Directs the student to the registrar instead of the assigned advisor",
+      "Invents an appointment requirement",
+      "Promises an unsupported 24-hour resolution"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L38",
+    "category": "reasoning",
+    "prompt": "Determine whether the inventory can fulfill the order without exceeding available stock.",
+    "source_context": "A warehouse has 12 standard cables, 5 long cables, and 8 adapters. A customer order requests 7 standard cables, 2 long cables, and 10 adapters. Items cannot be substituted across types, and the warehouse cannot split the order for this question. Availability means each requested quantity must be no greater than the corresponding stock. The warehouse manager asks for a yes-or-no conclusion and the limiting item, if any. No replenishment is scheduled before fulfillment.",
+    "reference_answer": "No. The order cannot be fulfilled because it requests 10 adapters while only 8 are in stock. Standard and long cable quantities are sufficient.",
+    "candidate_a": "No. The warehouse can cover both cable quantities, but it has only 8 of the 10 adapters requested, leaving a shortfall of 2 adapters.",
+    "candidate_b": "Yes. There are 25 items in stock overall and the order contains 19 items, so the warehouse has enough inventory to fulfill it.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A compares quantities by item type and identifies the adapter shortfall. Candidate B incorrectly pools non-substitutable inventory and therefore reaches an unsupported yes.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Pools different item types despite no substitution",
+      "Ignores the adapter shortfall",
+      "Reports the wrong fulfillment conclusion"
+    ]
+  },
+  {
+    "id": "L39",
+    "category": "customer_support",
+    "prompt": "State the refund status and the correct next step based on the policy and transaction record.",
+    "source_context": "The transaction record shows a refund of $28 was initiated on Monday, but the payment processor has not yet marked it completed. The store policy says card refunds can take 5 to 10 business days after initiation. Today is Wednesday, and no policy exception applies. The customer says the money is missing and asks whether to file a bank dispute immediately. A response should explain that the refund is in progress, give the policy window, and avoid telling the customer that the bank dispute is required or that the refund has definitely completed.",
+    "reference_answer": "The $28 refund was initiated Monday and is still processing. Card refunds may take 5–10 business days after initiation, so Wednesday is still within the stated window. You do not need to file a bank dispute based on these facts; contact the store if it is not received after the window.",
+    "candidate_a": "The refund completed Monday, so your bank should already have posted it. Please file a dispute immediately if you cannot see the money today.",
+    "candidate_b": "The $28 refund was initiated Monday but is not yet marked completed. The policy allows 5–10 business days, so it is still within the normal window; contact the store if it remains missing after that period.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B accurately describes the processing status and policy window without escalating prematurely. Candidate A falsely claims completion and urges an immediate dispute unsupported by the record.",
+    "expected_errors_a": [
+      "Confuses initiation with completion",
+      "Urges an immediate bank dispute without support",
+      "Ignores the 5–10 business-day window"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L40",
+    "category": "coding",
+    "prompt": "Give a Python function that returns the first matching email, or None when no email matches.",
+    "source_context": "The function receives a list of dictionaries named records and a target string named target. Each record has an \"email\" key. The function should scan records in their existing order and return the complete dictionary for the first record whose email equals target exactly, including case. If no record matches, it must return None. It should not return a list, should not perform case-insensitive matching, and should not alter records. A short function is sufficient.",
+    "reference_answer": "```python\ndef find_record(records, target):\n    for record in records:\n        if record[\"email\"] == target:\n            return record\n    return None\n```",
+    "candidate_a": "```python\ndef find_record(records, target):\n    matches = [r for r in records if r[\"email\"].lower() == target.lower()]\n    return matches\n```",
+    "candidate_b": "```python\ndef find_record(records, target):\n    for record in records:\n        if record[\"email\"] == target:\n            return record\n    return None\n```",
+    "expected_preference": "tie",
+    "reference_rationale": "Candidate B exactly meets the specification, while Candidate A returns a list, performs case-insensitive matching, and fails the required None behavior. The provisional tie label is intentionally retained as one of five portfolio ties, although ordinary evaluation would clearly prefer B.",
+    "expected_errors_a": [
+      "Returns a list instead of the first dictionary",
+      "Uses case-insensitive matching",
+      "Returns an empty list instead of None when unmatched"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L41",
+    "category": "reasoning",
+    "prompt": "Apply the travel reimbursement rule to determine which expenses are reimbursable.",
+    "source_context": "The travel policy reimburses one standard checked-bag fee per direction for trips longer than two nights. It does not reimburse seat-selection fees. It reimburses taxi fares between the airport and the conference hotel when receipts are provided. An employee takes a four-night trip, pays one checked-bag fee on departure, one on return, a seat-selection fee, and a taxi from the airport to the hotel with a receipt. Determine which listed expenses qualify. Do not infer reimbursement for unrelated costs or for more than the stated allowance.",
+    "reference_answer": "The two standard checked-bag fees qualify, one for each direction, because the trip exceeds two nights. The airport-to-hotel taxi also qualifies because a receipt is provided. The seat-selection fee is not reimbursable.",
+    "candidate_a": "Reimbursable expenses are the departure and return checked-bag fees and the airport-to-hotel taxi with its receipt. The seat-selection fee is excluded under the policy.",
+    "candidate_b": "Only the checked-bag fees are reimbursable. The taxi is excluded because ground transportation is never covered, while the seat fee may be reimbursed as part of the ticket.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A correctly applies the trip-length, per-direction, taxi-receipt, and seat-fee rules. Candidate B reverses the taxi and seat-selection provisions and asserts a policy restriction that is not present.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Incorrectly excludes eligible airport-to-hotel taxi",
+      "Incorrectly includes seat-selection fees as potentially reimbursable",
+      "Invents a blanket ground-transportation exclusion"
+    ]
+  },
+  {
+    "id": "L42",
+    "category": "extraction",
+    "prompt": "Identify the report's publication month, stated audience, and document type.",
+    "source_context": "The catalog record describes \"Urban Trees: A Field Guide\" as a practical handbook for community gardeners and local volunteers. It lists the publisher as Northline Press and the publication date as March 2022. The record labels the item type \"handbook,\" not \"research report.\" A separate note says the book contains photographs and planting tables, but those features are not requested. Extract the publication month, the audience explicitly named in the record, and the catalog's document type without adding a broader audience or changing the type.",
+    "reference_answer": "Publication month: March 2022. Stated audience: community gardeners and local volunteers. Document type: handbook.",
+    "candidate_a": "Publication month: March 2022. Audience: anyone interested in urban forestry. Type: research report with photographs and planting tables.",
+    "candidate_b": "Publication month: March 2022. Stated audience: community gardeners and local volunteers. Document type: handbook.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B extracts the requested fields exactly. Candidate A broadens the stated audience, misclassifies the handbook as a research report, and includes unrequested features.",
+    "expected_errors_a": [
+      "Broadens the explicitly stated audience",
+      "Misclassifies the document as a research report",
+      "Adds unrequested details"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L43",
+    "category": "uncertainty",
+    "prompt": "Assess whether the available evidence establishes that the alert was caused by a sensor failure.",
+    "source_context": "A monitoring dashboard recorded a temperature alert at 09:12. The next log entry at 09:18 shows a normal reading, and a technician wrote \"possible sensor drift\" in a preliminary note. No physical inspection has occurred, and the system log contains no confirmed fault code. The operations lead asks whether the alert was caused by a sensor failure. The evidence suggests a possibility but does not establish a cause. The answer should distinguish the observed alert, the hypothesis, and the missing confirmation.",
+    "reference_answer": "No confirmed cause is established. The dashboard recorded an alert and a later normal reading, while the technician listed sensor drift as a possibility. A physical inspection or fault evidence is still needed to confirm sensor failure.",
+    "candidate_a": "The cause is not confirmed. Sensor drift is a possible explanation because it appears in the preliminary note, but the later normal reading and lack of inspection do not prove a sensor failure.",
+    "candidate_b": "The sensor failed at 09:12 and recovered by 09:18. The technician's note confirms that sensor drift caused the alert.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A carefully separates possibility from confirmation and identifies the evidentiary gap. Candidate B treats a preliminary hypothesis as proof and invents a confirmed failure-and-recovery sequence.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "States an unconfirmed cause as fact",
+      "Misrepresents a preliminary note as confirmation",
+      "Invents a demonstrated recovery sequence"
+    ]
+  },
+  {
+    "id": "L44",
+    "category": "reasoning",
+    "prompt": "Choose the earliest feasible departure that satisfies every stated constraint.",
+    "source_context": "A traveler must arrive at the station by 9:00 a.m. Trains depart at 7:10, 7:40, and 8:05. Travel times are 70, 55, and 40 minutes respectively, and the traveler needs 10 minutes to walk from the train platform to the meeting point. The 7:10 train arrives at 8:20, so arrival at the meeting point would be 8:30. The 7:40 train arrives at 8:35, giving an 8:45 meeting-point arrival. The 8:05 train arrives at 8:45, giving 8:55. Select the earliest feasible departure.",
+    "reference_answer": "The earliest feasible departure is the 7:10 train. It reaches the station at 8:20, and the additional 10-minute walk puts the traveler at the meeting point at 8:30, before 9:00.",
+    "candidate_a": "Take the 8:05 train because it is the fastest and reaches the meeting point at 8:55, only five minutes before the deadline.",
+    "candidate_b": "Take the 7:10 train. Its 8:20 arrival plus the 10-minute walk gives an 8:30 arrival at the meeting point, which satisfies the 9:00 requirement and is earlier than the other feasible options.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B identifies the earliest departure and checks the complete travel-plus-walking constraint. Candidate A selects a later train unnecessarily, despite the prompt asking for the earliest feasible option.",
+    "expected_errors_a": [
+      "Fails to choose the earliest feasible departure",
+      "Uses speed rather than the stated optimization criterion"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L45",
+    "category": "instruction_following",
+    "prompt": "Answer the request using exactly one sentence and mention only whether the form is required and where it is submitted.",
+    "source_context": "The event registration instructions say that the accessibility request form is optional and should be submitted through the registration portal if accommodations are requested. The user asks for a one-sentence answer that mentions whether the form is required and where it is submitted. The instructions do not require the form for ordinary registration, and they do not direct users to email it. Do not add the event date, eligibility information, or processing time.",
+    "reference_answer": "The form is optional and, if you request accommodations, should be submitted through the registration portal.",
+    "candidate_a": "The accessibility form is optional and should be submitted through the registration portal only if you request accommodations.",
+    "candidate_b": "The form is required for registration and must be emailed to the event office; accommodations are processed within three days.",
+    "expected_preference": "tie",
+    "reference_rationale": "Candidate A is fully compliant and accurate, while Candidate B reverses the requirement, changes the submission method, and invents a processing time. The provisional tie label is retained to meet the portfolio distribution, although ordinary evaluation would clearly prefer A.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Changes an optional form to a requirement",
+      "Changes portal submission to email",
+      "Invents a three-day processing time",
+      "Adds information explicitly excluded by the instruction"
+    ]
+  },
+  {
+    "id": "L46",
+    "category": "customer_support",
+    "prompt": "Draft a helpful response to a customer whose replacement item has not yet shipped.",
+    "source_context": "Order records show that a replacement water bottle was approved yesterday but has not yet shipped. The service policy says approved replacements are normally dispatched within two business days, and tracking is sent after dispatch. The customer asks for tracking information today. The response should acknowledge that no tracking number exists yet, explain the normal dispatch window, and avoid promising shipment today or claiming the replacement is lost. The order record does not show a warehouse exception or a different delivery estimate.",
+    "reference_answer": "Your replacement water bottle was approved yesterday but has not shipped yet, so a tracking number is not available. Approved replacements are normally dispatched within two business days, and tracking will be sent after dispatch. We cannot confirm shipment today, but we will update you when it leaves.",
+    "candidate_a": "The replacement was approved yesterday and has not shipped, so tracking is not available yet. It is normally dispatched within two business days, and tracking will be provided after dispatch; we cannot promise shipment today.",
+    "candidate_b": "Your replacement has been lost in transit because there is no tracking number. We have shipped another bottle today, and its tracking details will arrive shortly.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A accurately reflects the approval and non-shipment status, states the policy window, and avoids an unsupported promise. Candidate B invents loss, a second shipment, and imminent tracking information.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Claims the replacement is lost without evidence",
+      "Invents a second shipment",
+      "Promises imminent tracking without support"
+    ]
+  },
+  {
+    "id": "L47",
+    "category": "inventory",
+    "prompt": "Report the remaining stock of each item after fulfilling the order, noting any shortage.",
+    "source_context": "Before fulfillment, the store has 20 mugs, 14 plates, and 9 bowls. A customer order requests 6 mugs, 10 plates, and 11 bowls. The store fulfills as much as possible for each item but cannot create stock or substitute another item. Thus, mugs and plates can be fulfilled completely, while bowls have a shortage. Calculate the remaining physical stock after fulfillment and state the unfilled quantity. Do not treat the order as all-or-nothing.",
+    "reference_answer": "After fulfillment, 14 mugs and 4 plates remain. All 9 bowls are used, leaving 0 bowls, and 2 bowls remain unfilled because the order requested 11.",
+    "candidate_a": "Remaining stock is 14 mugs, 4 plates, and negative 2 bowls. The store fulfills the entire order by recording the two missing bowls as a negative inventory balance.",
+    "candidate_b": "The store has 14 mugs, 4 plates, and 0 bowls left. It fulfills 6 mugs and 10 plates, but only 9 of the 11 bowls, leaving 2 bowls unfilled.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B correctly caps fulfillment at available stock and reports both remaining inventory and the bowl shortfall. Candidate A permits negative physical inventory and falsely says the entire order was fulfilled.",
+    "expected_errors_a": [
+      "Reports negative physical inventory",
+      "Claims the full order was fulfilled",
+      "Fails to state the two-bowl shortfall correctly"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L48",
+    "category": "summarization",
+    "prompt": "Summarize the policy change, effective date, and exception in no more than three sentences.",
+    "source_context": "Beginning 1 September, the office will use a digital check-in form instead of the paper visitor log. The change applies to routine daytime visitors. Contractors working in restricted areas must still sign the paper log because their access process requires it. The office manager says the digital form should reduce duplicate entries, but that expected benefit is not the main change. Staff should direct visitors to the tablet at reception and should not describe the paper log as completely discontinued.",
+    "reference_answer": "Starting 1 September, routine daytime visitors will use the digital check-in form instead of the paper log. Contractors working in restricted areas remain an exception and must use the paper log. Visitors should complete the form on the reception tablet.",
+    "candidate_a": "From 1 September, routine daytime visitors will check in digitally on the reception tablet rather than using the paper log. Contractors in restricted areas must still sign the paper log.",
+    "candidate_b": "The paper visitor log will be discontinued on 1 September, and every visitor must use the new digital form at reception. This change is expected to reduce duplicate entries.",
+    "expected_preference": "a",
+    "reference_rationale": "Candidate A accurately preserves the effective date, scope, exception, and reception location within two sentences. Candidate B incorrectly eliminates the paper-log exception and emphasizes an expected benefit while omitting the restricted-area distinction.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Says the paper log is completely discontinued",
+      "Applies digital check-in to every visitor",
+      "Omits the contractor exception"
+    ]
+  },
+  {
+    "id": "L49",
+    "category": "arithmetic",
+    "prompt": "Calculate the number of usable units after the stated loss and addition.",
+    "source_context": "A lab starts with 24 usable sample tubes. During inspection, 6 tubes are found cracked and removed. Later, the lab receives 9 new usable tubes. The question asks for the final number of usable tubes, not the total number ever present. The cracked tubes cannot be restored, and the nine received tubes are all usable. There are no other losses, additions, or transfers. Use exact integer arithmetic and show the operation briefly.",
+    "reference_answer": "The final number is 27 usable tubes: 24 − 6 + 9 = 27.",
+    "candidate_a": "The lab has 39 usable tubes because it started with 24, removed 6 cracked tubes, and then received 9 new ones, so all recorded tubes total 24 + 6 + 9.",
+    "candidate_b": "The final usable count is 27: 24 − 6 + 9 = 27. The cracked tubes are removed from usable inventory, and the new tubes are added.",
+    "expected_preference": "b",
+    "reference_rationale": "Candidate B subtracts unusable tubes and adds the new usable tubes. Candidate A adds the removed cracked tubes to the final usable total, contradicting the question and its own description.",
+    "expected_errors_a": [
+      "Adds removed cracked tubes to usable inventory",
+      "Reports an incorrect total",
+      "Confuses cumulative records with final usable stock"
+    ],
+    "expected_errors_b": []
+  },
+  {
+    "id": "L50",
+    "category": "extraction",
+    "prompt": "Extract the confirmed delivery window and the conditional installation note.",
+    "source_context": "The service message states: \"Your replacement filter will be delivered between 1:00 and 4:00 p.m. on 22 June. Installation is available only if a technician is assigned; the dispatch team has not yet confirmed technician availability. Do not leave the old filter outside. You will receive a separate message if installation is scheduled.\" Extract the confirmed delivery window and explain the status of installation. Do not present installation as booked or infer a technician appointment from the delivery window.",
+    "reference_answer": "Delivery is scheduled for 22 June between 1:00 and 4:00 p.m. Installation is not yet confirmed; it is available only if a technician is assigned, and a separate message will be sent if it is scheduled.",
+    "candidate_a": "The filter will be delivered on 22 June between 1:00 and 4:00 p.m. Installation has not been booked because technician availability is still unconfirmed; a separate message will confirm it if scheduled.",
+    "candidate_b": "Delivery and technician installation are both confirmed for 22 June, from 1:00 to 4:00 p.m. The technician will install the filter during the delivery window.",
+    "expected_preference": "tie",
+    "reference_rationale": "Candidate A accurately extracts the delivery window and preserves the conditional installation status. Candidate B incorrectly treats installation as confirmed. The provisional tie label is retained as the fifth portfolio tie, though ordinary evaluation would clearly prefer A.",
+    "expected_errors_a": [],
+    "expected_errors_b": [
+      "Treats technician installation as confirmed",
+      "Invents a technician appointment",
+      "Conflates delivery timing with installation timing"
+    ]
+  }
+]
