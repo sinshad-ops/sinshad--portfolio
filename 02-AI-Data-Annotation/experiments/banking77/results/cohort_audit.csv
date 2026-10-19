@@ -1,4 +1,0 @@
-cohort,queries,correct,accuracy,high_confidence_predictions,high_confidence_errors
-01_short_1_to_7_words,929,766,0.8245425188374597,806,89
-02_medium_8_to_15_words,1745,1512,0.8664756446991404,1625,161
-03_long_16_plus_words,406,367,0.9039408866995073,393,29
