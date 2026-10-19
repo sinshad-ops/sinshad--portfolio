@@ -1,0 +1,759 @@
+{
+  "author": "Sinshad PS",
+  "build_date": "2026-10-09",
+  "claims_boundary": "AI-assisted synthetic personal projects, not employment or production certification",
+  "human_review_status": "pending",
+  "manifest_file_count": 143,
+  "projects": {
+    "01-LLM-Evaluation": {
+      "agreement_rate": 0.9,
+      "case_count": 50,
+      "confusion": {
+        "A": {
+          "A": 22,
+          "B": 0,
+          "tie": 0
+        },
+        "B": {
+          "A": 0,
+          "B": 23,
+          "tie": 0
+        },
+        "tie": {
+          "A": 4,
+          "B": 1,
+          "tie": 0
+        }
+      },
+      "disagreements": 5,
+      "mean_scores": {
+        "accuracy": 3.13,
+        "clarity": 4.5,
+        "helpfulness": 3.13,
+        "instruction_following": 3.44
+      },
+      "pass_rate": 0.5,
+      "pass_rule": "weighted>=4 and accuracy>=4 and instruction_following>=4",
+      "per_category": {
+        "arithmetic": {
+          "agreement": 0.8,
+          "n": 5
+        },
+        "coding": {
+          "agreement": 0.8,
+          "n": 5
+        },
+        "customer_support": {
+          "agreement": 1,
+          "n": 7
+        },
+        "extraction": {
+          "agreement": 0.8333333333333334,
+          "n": 6
+        },
+        "information_retrieval": {
+          "agreement": 1,
+          "n": 2
+        },
+        "instruction_following": {
+          "agreement": 0.8333333333333334,
+          "n": 6
+        },
+        "inventory": {
+          "agreement": 1,
+          "n": 1
+        },
+        "reasoning": {
+          "agreement": 1,
+          "n": 6
+        },
+        "scheduling": {
+          "agreement": 1,
+          "n": 1
+        },
+        "summarization": {
+          "agreement": 0.75,
+          "n": 4
+        },
+        "travel_policy": {
+          "agreement": 1,
+          "n": 2
+        },
+        "uncertainty": {
+          "agreement": 1,
+          "n": 5
+        }
+      },
+      "project": "llm",
+      "provenance": {
+        "author_reference": "Strawberry fast model, family/version unspecified",
+        "human_gold": false,
+        "separate_scoring_pass": "Strawberry fast model, family/version unspecified",
+        "timestamp": "2026-10-08"
+      },
+      "response_count": 100,
+      "threshold_sensitivity": {
+        "3.5": 0.5,
+        "4.0": 0.5,
+        "4.5": 0.5
+      },
+      "ties": {
+        "judge": 0,
+        "provisional": 5
+      },
+      "weighted_formula": "0.4*accuracy + 0.3*instruction_following + 0.2*helpfulness + 0.1*clarity"
+    },
+    "02-AI-Data-Annotation": {
+      "all": {
+        "entity_span_exact": {
+          "f1": 0,
+          "fn": 58,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0,
+          "tp": 0
+        },
+        "sentiment": {
+          "accuracy": 0.34,
+          "confusion": {
+            "mixed": {
+              "mixed": 1,
+              "negative": 3,
+              "neutral": 15,
+              "positive": 3
+            },
+            "negative": {
+              "mixed": 0,
+              "negative": 6,
+              "neutral": 42,
+              "positive": 0
+            },
+            "neutral": {
+              "mixed": 0,
+              "negative": 3,
+              "neutral": 27,
+              "positive": 0
+            },
+            "positive": {
+              "mixed": 0,
+              "negative": 0,
+              "neutral": 0,
+              "positive": 0
+            }
+          },
+          "macro_f1": 0.19016018306636157,
+          "n": 100,
+          "per_class": {
+            "mixed": {
+              "f1": 0.08695652173913045,
+              "precision": 1,
+              "recall": 0.045454545454545456,
+              "support": 22
+            },
+            "negative": {
+              "f1": 0.2,
+              "precision": 0.5,
+              "recall": 0.125,
+              "support": 48
+            },
+            "neutral": {
+              "f1": 0.4736842105263158,
+              "precision": 0.32142857142857145,
+              "recall": 0.9,
+              "support": 30
+            },
+            "positive": {
+              "f1": 0,
+              "precision": 0,
+              "recall": 0,
+              "support": 0
+            }
+          }
+        },
+        "topic": {
+          "accuracy": 0.74,
+          "confusion": {
+            "account": {
+              "account": 12,
+              "billing": 2,
+              "delivery": 0,
+              "general": 1,
+              "refund": 0,
+              "technical": 2
+            },
+            "billing": {
+              "account": 0,
+              "billing": 16,
+              "delivery": 0,
+              "general": 1,
+              "refund": 0,
+              "technical": 0
+            },
+            "delivery": {
+              "account": 0,
+              "billing": 1,
+              "delivery": 16,
+              "general": 0,
+              "refund": 0,
+              "technical": 0
+            },
+            "general": {
+              "account": 4,
+              "billing": 1,
+              "delivery": 1,
+              "general": 7,
+              "refund": 1,
+              "technical": 2
+            },
+            "refund": {
+              "account": 0,
+              "billing": 2,
+              "delivery": 2,
+              "general": 0,
+              "refund": 10,
+              "technical": 2
+            },
+            "technical": {
+              "account": 1,
+              "billing": 0,
+              "delivery": 0,
+              "general": 3,
+              "refund": 0,
+              "technical": 13
+            }
+          },
+          "macro_f1": 0.7297078375509748,
+          "n": 100,
+          "per_class": {
+            "account": {
+              "f1": 0.7058823529411765,
+              "precision": 0.7058823529411765,
+              "recall": 0.7058823529411765,
+              "support": 17
+            },
+            "billing": {
+              "f1": 0.8205128205128205,
+              "precision": 0.7272727272727273,
+              "recall": 0.9411764705882353,
+              "support": 17
+            },
+            "delivery": {
+              "f1": 0.8888888888888888,
+              "precision": 0.8421052631578947,
+              "recall": 0.9411764705882353,
+              "support": 17
+            },
+            "general": {
+              "f1": 0.5,
+              "precision": 0.5833333333333334,
+              "recall": 0.4375,
+              "support": 16
+            },
+            "refund": {
+              "f1": 0.7407407407407406,
+              "precision": 0.9090909090909091,
+              "recall": 0.625,
+              "support": 16
+            },
+            "technical": {
+              "f1": 0.7222222222222222,
+              "precision": 0.6842105263157895,
+              "recall": 0.7647058823529411,
+              "support": 17
+            }
+          }
+        },
+        "urgency": {
+          "accuracy": 0.33,
+          "confusion": {
+            "high": {
+              "high": 8,
+              "low": 14,
+              "medium": 0
+            },
+            "low": {
+              "high": 6,
+              "low": 14,
+              "medium": 2
+            },
+            "medium": {
+              "high": 14,
+              "low": 31,
+              "medium": 11
+            }
+          },
+          "macro_f1": 0.3281731973519413,
+          "n": 100,
+          "per_class": {
+            "high": {
+              "f1": 0.32,
+              "precision": 0.2857142857142857,
+              "recall": 0.36363636363636365,
+              "support": 22
+            },
+            "low": {
+              "f1": 0.345679012345679,
+              "precision": 0.23728813559322035,
+              "recall": 0.6363636363636364,
+              "support": 22
+            },
+            "medium": {
+              "f1": 0.3188405797101449,
+              "precision": 0.8461538461538461,
+              "recall": 0.19642857142857142,
+              "support": 56
+            }
+          }
+        }
+      },
+      "baseline": "frozen keyword dictionaries; labels are not consulted during prediction",
+      "case_count": 100,
+      "holdout": {
+        "entity_span_exact": {
+          "f1": 0,
+          "fn": 13,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0,
+          "tp": 0
+        },
+        "sentiment": {
+          "accuracy": 0.4,
+          "confusion": {
+            "mixed": {
+              "mixed": 0,
+              "negative": 2,
+              "neutral": 3,
+              "positive": 1
+            },
+            "negative": {
+              "mixed": 0,
+              "negative": 0,
+              "neutral": 11,
+              "positive": 0
+            },
+            "neutral": {
+              "mixed": 0,
+              "negative": 1,
+              "neutral": 12,
+              "positive": 0
+            },
+            "positive": {
+              "mixed": 0,
+              "negative": 0,
+              "neutral": 0,
+              "positive": 0
+            }
+          },
+          "macro_f1": 0.15384615384615388,
+          "n": 30,
+          "per_class": {
+            "mixed": {
+              "f1": 0,
+              "precision": 0,
+              "recall": 0,
+              "support": 6
+            },
+            "negative": {
+              "f1": 0,
+              "precision": 0,
+              "recall": 0,
+              "support": 11
+            },
+            "neutral": {
+              "f1": 0.6153846153846155,
+              "precision": 0.46153846153846156,
+              "recall": 0.9230769230769231,
+              "support": 13
+            },
+            "positive": {
+              "f1": 0,
+              "precision": 0,
+              "recall": 0,
+              "support": 0
+            }
+          }
+        },
+        "topic": {
+          "accuracy": 0.7666666666666667,
+          "confusion": {
+            "account": {
+              "account": 3,
+              "billing": 1,
+              "delivery": 0,
+              "general": 0,
+              "refund": 0,
+              "technical": 1
+            },
+            "billing": {
+              "account": 0,
+              "billing": 5,
+              "delivery": 0,
+              "general": 0,
+              "refund": 0,
+              "technical": 0
+            },
+            "delivery": {
+              "account": 0,
+              "billing": 1,
+              "delivery": 4,
+              "general": 0,
+              "refund": 0,
+              "technical": 0
+            },
+            "general": {
+              "account": 0,
+              "billing": 0,
+              "delivery": 0,
+              "general": 3,
+              "refund": 0,
+              "technical": 2
+            },
+            "refund": {
+              "account": 0,
+              "billing": 1,
+              "delivery": 0,
+              "general": 0,
+              "refund": 3,
+              "technical": 1
+            },
+            "technical": {
+              "account": 0,
+              "billing": 0,
+              "delivery": 0,
+              "general": 0,
+              "refund": 0,
+              "technical": 5
+            }
+          },
+          "macro_f1": 0.7704008954008953,
+          "n": 30,
+          "per_class": {
+            "account": {
+              "f1": 0.7499999999999999,
+              "precision": 1,
+              "recall": 0.6,
+              "support": 5
+            },
+            "billing": {
+              "f1": 0.7692307692307693,
+              "precision": 0.625,
+              "recall": 1,
+              "support": 5
+            },
+            "delivery": {
+              "f1": 0.888888888888889,
+              "precision": 1,
+              "recall": 0.8,
+              "support": 5
+            },
+            "general": {
+              "f1": 0.7499999999999999,
+              "precision": 1,
+              "recall": 0.6,
+              "support": 5
+            },
+            "refund": {
+              "f1": 0.7499999999999999,
+              "precision": 1,
+              "recall": 0.6,
+              "support": 5
+            },
+            "technical": {
+              "f1": 0.7142857142857143,
+              "precision": 0.5555555555555556,
+              "recall": 1,
+              "support": 5
+            }
+          }
+        },
+        "urgency": {
+          "accuracy": 0.43333333333333335,
+          "confusion": {
+            "high": {
+              "high": 2,
+              "low": 4,
+              "medium": 0
+            },
+            "low": {
+              "high": 1,
+              "low": 5,
+              "medium": 0
+            },
+            "medium": {
+              "high": 3,
+              "low": 9,
+              "medium": 6
+            }
+          },
+          "macro_f1": 0.4166666666666667,
+          "n": 30,
+          "per_class": {
+            "high": {
+              "f1": 0.3333333333333333,
+              "precision": 0.3333333333333333,
+              "recall": 0.3333333333333333,
+              "support": 6
+            },
+            "low": {
+              "f1": 0.4166666666666667,
+              "precision": 0.2777777777777778,
+              "recall": 0.8333333333333334,
+              "support": 6
+            },
+            "medium": {
+              "f1": 0.5,
+              "precision": 1,
+              "recall": 0.3333333333333333,
+              "support": 18
+            }
+          }
+        }
+      },
+      "project": "annotation",
+      "qc": {
+        "malformed_span_quarantine": 2,
+        "manual_queue": 29
+      },
+      "simulation_not_human": {
+        "agreement": 0.87,
+        "controlled_errors": 13,
+        "rate": 0.13,
+        "warning": "SIMULATION NOT HUMAN; not annotator agreement"
+      },
+      "split": {
+        "calibration": 70,
+        "holdout": 30
+      }
+    },
+    "03-Multilingual-AI-Evaluation": {
+      "automatic_qc_flags": 5,
+      "benchmark_preference_counts": {
+        "A": 18,
+        "B": 21,
+        "tie": 11
+      },
+      "candidate_count": 100,
+      "human_review": "Malayalam native human review required; no human scores or language accuracy reported",
+      "integrity_scope": "flag-only Unicode/script/digit checks, never definitive correctness",
+      "pair_count": 50,
+      "per_domain_composition_error_rate": {
+        "culture": {
+          "candidate_n": 12,
+          "rate": 0.4166666666666667
+        },
+        "customer_support": {
+          "candidate_n": 16,
+          "rate": 0.375
+        },
+        "education": {
+          "candidate_n": 16,
+          "rate": 0.3125
+        },
+        "health_information": {
+          "candidate_n": 14,
+          "rate": 0.35714285714285715
+        },
+        "public_service": {
+          "candidate_n": 16,
+          "rate": 0.4375
+        },
+        "technology": {
+          "candidate_n": 12,
+          "rate": 0.4166666666666667
+        },
+        "travel": {
+          "candidate_n": 14,
+          "rate": 0.42857142857142855
+        }
+      },
+      "project": "multilingual",
+      "synthetic_error_distribution": {
+        "meaning_shift": 14,
+        "negation_error": 9,
+        "none": 61,
+        "number_error": 5,
+        "omission": 10,
+        "register": 1
+      }
+    },
+    "04-Multimodal-AI-Evaluation": {
+      "answer_record_count": 240,
+      "controlled_fault_records": 120,
+      "ground_truth": "constructed from rendering geometry; metadata is an oracle only for dataset creation, never read by pixel baseline",
+      "limitation": "Artificial geometric images are not evidence of performance on natural photos or a VLM.",
+      "pixel_baseline": {
+        "abstentions": 60,
+        "accuracy": 0.9,
+        "correct": 54,
+        "coverage": 0.5,
+        "eligible": 60,
+        "per_type": {
+          "count": {
+            "accuracy": 1,
+            "n": 20
+          },
+          "dominant_color": {
+            "accuracy": 0.7,
+            "n": 20
+          },
+          "tallest_bar": {
+            "accuracy": 1,
+            "n": 20
+          }
+        }
+      },
+      "project": "multimodal",
+      "scene_count": 120,
+      "synthetic_correct_records": 120
+    },
+    "05-AI-Quality-Evaluation": {
+      "accuracy": 0.42,
+      "baseline": "lexical heuristic; expected labels are not consulted",
+      "case_count": 100,
+      "category_breakdown": {
+        "benign": {
+          "accuracy": 1,
+          "n": 8
+        },
+        "bias": {
+          "accuracy": 0.3076923076923077,
+          "n": 13
+        },
+        "hallucination": {
+          "accuracy": 0.21428571428571427,
+          "n": 14
+        },
+        "instruction_failure": {
+          "accuracy": 0.6153846153846154,
+          "n": 13
+        },
+        "over_refusal": {
+          "accuracy": 0.5833333333333334,
+          "n": 12
+        },
+        "privacy": {
+          "accuracy": 0.46153846153846156,
+          "n": 13
+        },
+        "prompt_injection": {
+          "accuracy": 0.5,
+          "n": 12
+        },
+        "unsafe_advice": {
+          "accuracy": 0,
+          "n": 15
+        }
+      },
+      "confusion": {
+        "accept": {
+          "accept": 37,
+          "escalate": 0,
+          "revise": 1
+        },
+        "escalate": {
+          "accept": 13,
+          "escalate": 0,
+          "revise": 2
+        },
+        "revise": {
+          "accept": 42,
+          "escalate": 0,
+          "revise": 5
+        }
+      },
+      "escalation_false_negatives": 15,
+      "escalation_false_positives": 0,
+      "macro_f1": 0.25034965034965034,
+      "per_class": {
+        "accept": {
+          "f1": 0.5692307692307693,
+          "precision": 0.40217391304347827,
+          "recall": 0.9736842105263158,
+          "support": 38
+        },
+        "escalate": {
+          "f1": 0,
+          "precision": 0,
+          "recall": 0,
+          "support": 15
+        },
+        "revise": {
+          "f1": 0.1818181818181818,
+          "precision": 0.625,
+          "recall": 0.10638297872340426,
+          "support": 47
+        }
+      },
+      "project": "safety",
+      "risk_tradeoff": "Escalation false negatives receive priority; false positives expose over-refusal and reviewer cost.",
+      "scope": "Portfolio-owned provisional rubric, not employer policy and not a safety certification."
+    },
+    "06-Search-Relevance": {
+      "failure_queue": 1,
+      "mrr_relevance_gte_2": 0.9833333333333333,
+      "ndcg_at_4": 0.9615103376941129,
+      "per_intent_ndcg": {
+        "informational": 0.9722846845635256,
+        "navigational": 0.9987699173624502,
+        "transactional": 0.9284536115748047
+      },
+      "project": "search",
+      "query_count": 30,
+      "ranking": "TF-IDF-style lexical query/title/snippet overlap; gold relevance is not used for ranking",
+      "result_count": 120,
+      "scope": "Fictional corpus judgments, not live-search performance; locale and local intent require reviewer context."
+    }
+  },
+  "python": "3.12.7 (main, Oct 16 2024, 00:21:24) [MSC v.1929 64 bit (AMD64)]",
+  "root": ".",
+  "seed": 20261008,
+  "validation": {
+    "command": "python -m unittest discover -s tests -v",
+    "date": "2026-10-09",
+    "output": "test_annotation_labels_spans_and_counts (test_portfolio.PortfolioTests.test_annotation_labels_spans_and_counts) ... ok\ntest_deterministic_analysis (test_portfolio.PortfolioTests.test_deterministic_analysis) ... ok\ntest_image_pixels (test_portfolio.PortfolioTests.test_image_pixels) ... ok\ntest_judge_score_range (test_portfolio.PortfolioTests.test_judge_score_range) ... ok\ntest_manifest_hashes (test_portfolio.PortfolioTests.test_manifest_hashes) ... ok\ntest_output_consistency (test_portfolio.PortfolioTests.test_output_consistency) ... ok\ntest_schemas_ids_and_counts (test_portfolio.PortfolioTests.test_schemas_ids_and_counts) ... ok\ntest_all_notebooks_are_executed_outputs (test_regressions.RegressionTests.test_all_notebooks_are_executed_outputs) ... ok\ntest_baseline_does_not_depend_on_reference_labels (test_regressions.RegressionTests.test_baseline_does_not_depend_on_reference_labels) ... ok\ntest_metric_known_values (test_regressions.RegressionTests.test_metric_known_values) ... ok\ntest_multilingual_none_is_not_error (test_regressions.RegressionTests.test_multilingual_none_is_not_error) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 26.769s\n\nOK",
+    "passed": true,
+    "returncode": 0
+  },
+  "banking77": {
+    "status": "COMPLETE",
+    "metrics": {
+      "accuracy": 0.8587662337662337,
+      "correct": 2645,
+      "label_count": 77,
+      "macro_f1": 0.85792295772106,
+      "n": 3080,
+      "top3_accuracy": 0.9516233766233766
+    },
+    "validation": {
+      "status": "PASS",
+      "banking77_tests": 10,
+      "preserved_suite_tests": 11,
+      "notebook_executed_and_output_verified": true,
+      "banking77_numeric_and_csv_byte_reproduction": "PASS",
+      "synthetic_source_data_files_byte_preserved": 156,
+      "all_six_synthetic_metric_values_preserved": true,
+      "personal_human_annotation_performed": false,
+      "run_date": "2026-10-09"
+    }
+  },
+  "final_complete_validation": {
+    "status": "PASS",
+    "test_count": 28,
+    "python_verified": "3.12.7",
+    "real_public_data_studies": 2,
+    "banking77_test_queries": 3080,
+    "hh_preference_pairs": 200,
+    "deterministic_public_results": "PASS",
+    "hh_notebook_actually_executed": true,
+    "offline_hh_sample_reanalysis": "PASS",
+    "synthetic_input_files_preserved": 156,
+    "six_synthetic_metric_values_preserved": true,
+    "github_actions_matrix_executed": false,
+    "personal_human_annotation_performed": false,
+    "employment_or_client_work_claimed": false,
+    "website_script_syntax": "PASS",
+    "website_static_local_links": "PASS",
+    "website_interaction_runtime_retested": false
+  }
+}
