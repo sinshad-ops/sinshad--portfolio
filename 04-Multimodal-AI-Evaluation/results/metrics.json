@@ -1,0 +1,30 @@
+{
+  "answer_record_count": 240,
+  "controlled_fault_records": 120,
+  "ground_truth": "constructed from rendering geometry; metadata is an oracle only for dataset creation, never read by pixel baseline",
+  "limitation": "Artificial geometric images are not evidence of performance on natural photos or a VLM.",
+  "pixel_baseline": {
+    "abstentions": 60,
+    "accuracy": 0.9,
+    "correct": 54,
+    "coverage": 0.5,
+    "eligible": 60,
+    "per_type": {
+      "count": {
+        "accuracy": 1.0,
+        "n": 20
+      },
+      "dominant_color": {
+        "accuracy": 0.7,
+        "n": 20
+      },
+      "tallest_bar": {
+        "accuracy": 1.0,
+        "n": 20
+      }
+    }
+  },
+  "project": "multimodal",
+  "scene_count": 120,
+  "synthetic_correct_records": 120
+}
