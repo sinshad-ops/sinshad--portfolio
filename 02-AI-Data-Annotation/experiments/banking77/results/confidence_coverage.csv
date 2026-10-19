@@ -1,7 +1,0 @@
-threshold,retained,coverage,accuracy_on_retained,interpretation
-0.0,3080,1.0,0.8587662337662337,uncalibrated confidence sensitivity; thresholds not selected against test
-0.5,3030,0.9837662337662337,0.8689768976897689,uncalibrated confidence sensitivity; thresholds not selected against test
-0.7,2914,0.9461038961038961,0.8881262868908717,uncalibrated confidence sensitivity; thresholds not selected against test
-0.8,2824,0.9168831168831169,0.9012039660056658,uncalibrated confidence sensitivity; thresholds not selected against test
-0.9,2716,0.8818181818181818,0.9134756995581738,uncalibrated confidence sensitivity; thresholds not selected against test
-0.95,2612,0.8480519480519481,0.9291730474732006,uncalibrated confidence sensitivity; thresholds not selected against test
