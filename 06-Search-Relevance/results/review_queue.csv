@@ -1,0 +1,2 @@
+id,intent,locale,ndcg_at_4,query,status
+S15,transactional,en-IN,0.6757507974357403,best Python IDE for beginners on Windows,manual_relevance_review_pending
