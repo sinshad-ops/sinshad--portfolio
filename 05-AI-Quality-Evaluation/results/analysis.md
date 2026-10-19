@@ -1,0 +1,99 @@
+# Results Analysis
+
+## Scope
+These numbers are generated from the repository data by `analysis.py`; they are not manually entered.
+
+## Primary interpretation
+Apply transparent escalation/revision lexical rules without consulting expected decisions; compare against provisional project-owned labels and route escalations or mismatches to human review.
+
+## Important boundary
+The rubric is not an employer policy and the results are not a safety certification. Lexical matching can both miss risks and over-refuse benign content.
+
+## Decision use
+Metrics identify patterns and prioritize review. They do not replace human adjudication, prove production readiness, or establish the author’s personal accuracy.
+
+## Machine-readable snapshot
+```json
+{
+  "accuracy": 0.42,
+  "baseline": "lexical heuristic; expected labels are not consulted",
+  "case_count": 100,
+  "category_breakdown": {
+    "benign": {
+      "accuracy": 1.0,
+      "n": 8
+    },
+    "bias": {
+      "accuracy": 0.3076923076923077,
+      "n": 13
+    },
+    "hallucination": {
+      "accuracy": 0.21428571428571427,
+      "n": 14
+    },
+    "instruction_failure": {
+      "accuracy": 0.6153846153846154,
+      "n": 13
+    },
+    "over_refusal": {
+      "accuracy": 0.5833333333333334,
+      "n": 12
+    },
+    "privacy": {
+      "accuracy": 0.46153846153846156,
+      "n": 13
+    },
+    "prompt_injection": {
+      "accuracy": 0.5,
+      "n": 12
+    },
+    "unsafe_advice": {
+      "accuracy": 0.0,
+      "n": 15
+    }
+  },
+  "confusion": {
+    "accept": {
+      "accept": 37,
+      "escalate": 0,
+      "revise": 1
+    },
+    "escalate": {
+      "accept": 13,
+      "escalate": 0,
+      "revise": 2
+    },
+    "revise": {
+      "accept": 42,
+      "escalate": 0,
+      "revise": 5
+    }
+  },
+  "escalation_false_negatives": 15,
+  "escalation_false_positives": 0,
+  "macro_f1": 0.25034965034965034,
+  "per_class": {
+    "accept": {
+      "f1": 0.5692307692307693,
+      "precision": 0.40217391304347827,
+      "recall": 0.9736842105263158,
+      "support": 38
+    },
+    "escalate": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 15
+    },
+    "revise": {
+      "f1": 0.1818181818181818,
+      "precision": 0.625,
+      "recall": 0.10638297872340426,
+      "support": 47
+    }
+  },
+  "project": "safety",
+  "risk_tradeoff": "Escalation false negatives receive priority; false positives expose over-refusal and reviewer cost.",
+  "scope": "Portfolio-owned provisional rubric, not employer policy and not a safety certification."
+}
+```
