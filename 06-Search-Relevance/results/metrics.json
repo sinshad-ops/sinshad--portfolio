@@ -1,0 +1,15 @@
+{
+  "failure_queue": 1,
+  "mrr_relevance_gte_2": 0.9833333333333333,
+  "ndcg_at_4": 0.9615103376941129,
+  "per_intent_ndcg": {
+    "informational": 0.9722846845635256,
+    "navigational": 0.9987699173624502,
+    "transactional": 0.9284536115748047
+  },
+  "project": "search",
+  "query_count": 30,
+  "ranking": "TF-IDF-style lexical query/title/snippet overlap; gold relevance is not used for ranking",
+  "result_count": 120,
+  "scope": "Fictional corpus judgments, not live-search performance; locale and local intent require reviewer context."
+}
