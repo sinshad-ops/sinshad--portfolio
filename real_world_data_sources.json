@@ -1,0 +1,65 @@
+{
+  "note": "BANKING77 experiment is completed; other sources remain proposals. Original synthetic datasets/results remain separate.",
+  "sources": [
+    {
+      "project": "01-LLM-Evaluation",
+      "name": "Anthropic HH-RLHF",
+      "url": "https://huggingface.co/datasets/Anthropic/hh-rlhf",
+      "source_type": "human preference comparisons",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Check dataset card and terms before redistribution"
+    },
+    {
+      "project": "02-AI-Data-Annotation",
+      "name": "Banking77",
+      "url": "https://huggingface.co/datasets/PolyAI/banking77",
+      "source_type": "customer-support intent utterances",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Check dataset card and terms before redistribution",
+      "status": "downloaded_and_evaluated",
+      "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+      "verified_license": "CC-BY-4.0",
+      "experiment_path": "02-AI-Data-Annotation/experiments/banking77"
+    },
+    {
+      "project": "03-Multilingual-AI-Evaluation",
+      "name": "Malayalam-English code-mixed sentiment",
+      "url": "https://zenodo.org/records/4015234",
+      "source_type": "social-media comments with sentiment labels",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Cite original authors and follow repository license"
+    },
+    {
+      "project": "04-Multimodal-AI-Evaluation",
+      "name": "Microsoft COCO",
+      "url": "https://cocodataset.org/",
+      "source_type": "real images with human-written captions",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Follow COCO terms and image copyright notices"
+    },
+    {
+      "project": "04-Multimodal-AI-Evaluation",
+      "name": "FHIBE",
+      "url": "https://fairnessbenchmark.ai.sony/",
+      "source_type": "consent-based human-centric image fairness benchmark",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Registration and evaluation-only terms apply; not for general training"
+    },
+    {
+      "project": "05-AI-Quality-Evaluation",
+      "name": "Civil Comments",
+      "url": "https://huggingface.co/datasets/google/civil_comments",
+      "source_type": "online comments with toxicity-related labels",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Check dataset card and terms before redistribution"
+    },
+    {
+      "project": "06-Search-Relevance",
+      "name": "MS MARCO",
+      "url": "https://microsoft.github.io/msmarco/",
+      "source_type": "search queries, passages and relevance labels",
+      "label_origin": "published_human_annotation",
+      "redistribution": "Follow official terms and download guidance"
+    }
+  ]
+}
