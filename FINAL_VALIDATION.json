@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "test_count": 28,
+  "python_verified": "3.14.6",
+  "real_public_data_studies": 2,
+  "banking77_test_queries": 3080,
+  "hh_preference_pairs": 200,
+  "deterministic_public_results": "PASS",
+  "hh_notebook_actually_executed": true,
+  "offline_hh_sample_reanalysis": "PASS",
+  "synthetic_input_files_preserved": 156,
+  "six_synthetic_metric_values_preserved": true,
+  "github_actions_matrix_executed": false,
+  "personal_human_annotation_performed": false,
+  "employment_or_client_work_claimed": false
+}
