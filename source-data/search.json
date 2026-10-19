@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "S1",
+    "query": "Kerala tourism official itinerary planner",
+    "intent": "navigational",
+    "locale": "en-IN",
+    "reference_rationale": "Exact navigational query for a Kerala tourism planning resource; prioritize the matching corpus page over general travel articles.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kerala Tourism Itinerary Planner",
+        "snippet": "A fictional local planning tool for organizing routes, stays, and attractions across Kerala.",
+        "relevance": 3,
+        "reason": "Directly matches the requested planning resource and region."
+      },
+      {
+        "id": "r2",
+        "title": "Kerala Backwaters Travel Guide",
+        "snippet": "Overview of houseboats, lakes, and popular backwater destinations.",
+        "relevance": 2,
+        "reason": "Useful travel information but not the requested planner."
+      },
+      {
+        "id": "r3",
+        "title": "Goa Weekend Route Builder",
+        "snippet": "A fictional route-planning guide for short trips in Goa.",
+        "relevance": 1,
+        "reason": "Similar planning function but wrong state."
+      },
+      {
+        "id": "r4",
+        "title": "Kerala School Examination Calendar",
+        "snippet": "A calendar of fictional school examination dates.",
+        "relevance": 0,
+        "reason": "Unrelated to tourism or itinerary planning."
+      }
+    ]
+  },
+  {
+    "id": "S2",
+    "query": "how to fix Python list index out of range",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The user seeks an explanation and debugging guidance for a common Python exception.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Python IndexError: List Bounds Explained",
+        "snippet": "Explains zero-based indexing, length checks, and safe iteration patterns.",
+        "relevance": 3,
+        "reason": "Directly answers the exception and provides applicable fixes."
+      },
+      {
+        "id": "r2",
+        "title": "Debugging Python Dictionary KeyError",
+        "snippet": "Covers missing keys and dictionary access techniques.",
+        "relevance": 1,
+        "reason": "Python debugging is related, but the exception differs."
+      },
+      {
+        "id": "r3",
+        "title": "Python Lists and Slices Tutorial",
+        "snippet": "Introduces list creation, slicing, and common list operations.",
+        "relevance": 2,
+        "reason": "Provides partial background useful for understanding index errors."
+      },
+      {
+        "id": "r4",
+        "title": "Java Array Bounds Reference",
+        "snippet": "Discusses bounds errors in Java arrays.",
+        "relevance": 0,
+        "reason": "Wrong programming language and not directly useful."
+      }
+    ]
+  },
+  {
+    "id": "S3",
+    "query": "തിരുവനന്തപുരം ജില്ലാ കലക്ടറേറ്റ് സേവനങ്ങൾ",
+    "intent": "navigational",
+    "locale": "ml-IN",
+    "reference_rationale": "Exact Malayalam navigational query for services associated with the Thiruvananthapuram district collectorate.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "തിരുവനന്തപുരം ജില്ലാ കലക്ടറേറ്റ് സേവന പോർട്ടൽ",
+        "snippet": "ജില്ലാ ഓഫീസുമായി ബന്ധപ്പെട്ട സാങ്കൽപ്പിക സേവനങ്ങളും അപേക്ഷാ വിവരങ്ങളും.",
+        "relevance": 3,
+        "reason": "Matches the named district office and service intent."
+      },
+      {
+        "id": "r2",
+        "title": "കേരളത്തിലെ ജില്ലാ ഭരണകൂടം",
+        "snippet": "കേരളത്തിലെ ജില്ലാ ഭരണസംവിധാനത്തെക്കുറിച്ചുള്ള പൊതുവിവരം.",
+        "relevance": 2,
+        "reason": "Relevant administrative context but not the requested office."
+      },
+      {
+        "id": "r3",
+        "title": "കൊല്ലം ജില്ലാ കലക്ടറേറ്റ്",
+        "snippet": "കൊല്ലം ജില്ലയിലെ ഒരു സാങ്കൽപ്പിക ഭരണ ഓഫീസ് രേഖ.",
+        "relevance": 1,
+        "reason": "Same office type but wrong district."
+      },
+      {
+        "id": "r4",
+        "title": "തിരുവനന്തപുരം നഗരത്തിലെ മ്യൂസിയങ്ങൾ",
+        "snippet": "നഗരത്തിലെ സാംസ്കാരിക കേന്ദ്രങ്ങളുടെ പട്ടിക.",
+        "relevance": 0,
+        "reason": "Same locality but unrelated to public services."
+      }
+    ]
+  },
+  {
+    "id": "S4",
+    "query": "best budget homestays near Varkala cliff",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query indicates lodging selection with a price constraint and a specific Kerala destination.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Varkala Cliff Budget Homestay Directory",
+        "snippet": "Fictional local listings grouped by nightly price range and walking distance.",
+        "relevance": 3,
+        "reason": "Matches accommodation type, budget preference, and location."
+      },
+      {
+        "id": "r2",
+        "title": "Varkala Beach Travel Notes",
+        "snippet": "General notes on beaches, food, and seasonal activities.",
+        "relevance": 2,
+        "reason": "Useful destination context but lacks booking-focused lodging options."
+      },
+      {
+        "id": "r3",
+        "title": "Premium Kovalam Resorts",
+        "snippet": "A fictional catalog of upscale resorts in Kovalam.",
+        "relevance": 1,
+        "reason": "Travel accommodation is related, but price and location are mismatched."
+      },
+      {
+        "id": "r4",
+        "title": "Budget Laptop Comparison",
+        "snippet": "A product comparison for entry-level laptops.",
+        "relevance": 0,
+        "reason": "Unrelated product category."
+      }
+    ]
+  },
+  {
+    "id": "S5",
+    "query": "Malayalam movie songs from the 1990s",
+    "intent": "informational",
+    "locale": "ml-IN",
+    "reference_rationale": "The query requests historical media information about Malayalam film songs from a defined decade.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "1990കളിലെ മലയാള സിനിമാഗാനങ്ങൾ",
+        "snippet": "സാങ്കൽപ്പിക മീഡിയ കോർപ്പസിലെ ഗാനങ്ങളും ചിത്രങ്ങളും ദശകമനുസരിച്ച് ക്രമീകരിച്ചിരിക്കുന്നു.",
+        "relevance": 3,
+        "reason": "Directly matches language, medium, and decade."
+      },
+      {
+        "id": "r2",
+        "title": "മലയാളം സിനിമാ സംഗീതത്തിന്റെ ചരിത്രം",
+        "snippet": "മലയാള സിനിമാ സംഗീതത്തിലെ പ്രധാന കാലഘട്ടങ്ങളുടെ പൊതുവായ അവലോകനം.",
+        "relevance": 2,
+        "reason": "Provides useful broader context but is not limited to the 1990s."
+      },
+      {
+        "id": "r3",
+        "title": "2000കളിലെ മലയാള സിനിമാ ഗാനങ്ങൾ",
+        "snippet": "രണ്ടായിരം കാലഘട്ടത്തിലെ സാങ്കൽപ്പിക ഗാനപ്പട്ടിക.",
+        "relevance": 1,
+        "reason": "Correct language and topic but wrong decade."
+      },
+      {
+        "id": "r4",
+        "title": "തമിഴ് ടെലിവിഷൻ സീരിയൽ അവലോകനങ്ങൾ",
+        "snippet": "തമിഴ് ഭാഷയിലെ സീരിയൽ പരിപാടികളുടെ ചുരുക്ക അവലോകനങ്ങൾ.",
+        "relevance": 0,
+        "reason": "Wrong language, medium, and subject."
+      }
+    ]
+  },
+  {
+    "id": "S6",
+    "query": "Kerala SSLC mathematics model question paper",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The user is looking for a downloadable or usable preparation resource for a Kerala school examination.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kerala SSLC Mathematics Model Paper",
+        "snippet": "A fictional practice paper aligned with Kerala SSLC mathematics topics.",
+        "relevance": 3,
+        "reason": "Exactly matches exam, subject, and state board context."
+      },
+      {
+        "id": "r2",
+        "title": "Kerala SSLC Mathematics Study Guide",
+        "snippet": "Topic summaries and revision suggestions for secondary mathematics.",
+        "relevance": 2,
+        "reason": "Useful preparation material but not a model question paper."
+      },
+      {
+        "id": "r3",
+        "title": "CBSE Class 10 Mathematics Sample Paper",
+        "snippet": "A fictional sample paper for the CBSE curriculum.",
+        "relevance": 1,
+        "reason": "Similar grade and subject but wrong curriculum."
+      },
+      {
+        "id": "r4",
+        "title": "Kerala Higher Secondary Biology Notes",
+        "snippet": "Revision notes for a different subject and school level.",
+        "relevance": 0,
+        "reason": "Does not satisfy the requested subject or exam."
+      }
+    ]
+  },
+  {
+    "id": "S7",
+    "query": "why does Python pandas merge create duplicate columns",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query asks for a technical explanation of a specific pandas merge behavior.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Pandas Merge Suffixes and Duplicate Columns",
+        "snippet": "Explains overlapping column names, suffix parameters, and selecting join keys.",
+        "relevance": 3,
+        "reason": "Directly addresses the observed pandas merge behavior."
+      },
+      {
+        "id": "r2",
+        "title": "Pandas Concatenation Patterns",
+        "snippet": "Describes row and column concatenation across DataFrames.",
+        "relevance": 1,
+        "reason": "Related DataFrame operation but not the requested merge issue."
+      },
+      {
+        "id": "r3",
+        "title": "Joining DataFrames in pandas",
+        "snippet": "Introduces merge, join, key selection, and index alignment.",
+        "relevance": 2,
+        "reason": "Useful partial explanation of the surrounding operation."
+      },
+      {
+        "id": "r4",
+        "title": "Python Virtual Environment Setup",
+        "snippet": "Instructions for creating isolated Python environments.",
+        "relevance": 0,
+        "reason": "Python-related but unrelated to DataFrame columns."
+      }
+    ]
+  },
+  {
+    "id": "S8",
+    "query": "Kochi metro route map",
+    "intent": "navigational",
+    "locale": "en-IN",
+    "reference_rationale": "This is a direct request for a route map for a named Kerala transit system.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kochi Metro Route Map",
+        "snippet": "A fictional schematic showing stations and interchange points in Kochi.",
+        "relevance": 3,
+        "reason": "Exact match for the named transit system and map need."
+      },
+      {
+        "id": "r2",
+        "title": "Kochi Public Transport Guide",
+        "snippet": "General information about metro, bus, and ferry travel in Kochi.",
+        "relevance": 2,
+        "reason": "Relevant local transit information but not specifically a route map."
+      },
+      {
+        "id": "r3",
+        "title": "Thiruvananthapuram Bus Route Chart",
+        "snippet": "A fictional bus route reference for another Kerala city.",
+        "relevance": 1,
+        "reason": "Transport map content is related, but the city and mode differ."
+      },
+      {
+        "id": "r4",
+        "title": "Kochi Restaurant Neighborhood Guide",
+        "snippet": "A guide to fictional dining areas in Kochi.",
+        "relevance": 0,
+        "reason": "Shares the city name but not the transit intent."
+      }
+    ]
+  },
+  {
+    "id": "S9",
+    "query": "how to apply for Kerala birth certificate correction",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query seeks procedural steps for changing an entry in a Kerala civil record.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kerala Birth Certificate Correction Procedure",
+        "snippet": "A fictional public-service guide covering correction requests, supporting documents, and submission stages.",
+        "relevance": 3,
+        "reason": "Matches the state, document, and correction action."
+      },
+      {
+        "id": "r2",
+        "title": "How to Request a Birth Certificate Copy",
+        "snippet": "Explains requesting a duplicate or certified copy of a birth record.",
+        "relevance": 2,
+        "reason": "Related document service but does not focus on corrections."
+      },
+      {
+        "id": "r3",
+        "title": "Kerala Marriage Record Update Guide",
+        "snippet": "A fictional guide for amendments to marriage registration records.",
+        "relevance": 1,
+        "reason": "Same administrative theme but wrong record type."
+      },
+      {
+        "id": "r4",
+        "title": "Kerala Property Tax Payment Help",
+        "snippet": "Information about municipal property tax payments.",
+        "relevance": 0,
+        "reason": "Unrelated public service."
+      }
+    ]
+  },
+  {
+    "id": "S10",
+    "query": "buy insulated steel water bottle under 1000 rupees",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query expresses purchase intent with a product type, material, and price ceiling.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Insulated Steel Bottles Under ₹1,000",
+        "snippet": "A fictional product comparison grouped by capacity, insulation, and listed price band.",
+        "relevance": 3,
+        "reason": "Matches product, material, insulation, and budget."
+      },
+      {
+        "id": "r2",
+        "title": "Reusable Water Bottle Materials Guide",
+        "snippet": "Compares steel, glass, and plastic bottles for daily use.",
+        "relevance": 2,
+        "reason": "Useful buying guidance but lacks the requested price-filtered products."
+      },
+      {
+        "id": "r3",
+        "title": "Premium Vacuum Flasks",
+        "snippet": "A fictional catalog of high-priced insulated flasks.",
+        "relevance": 1,
+        "reason": "Similar product function but likely outside the stated budget."
+      },
+      {
+        "id": "r4",
+        "title": "Steel Lunch Boxes Under ₹1,000",
+        "snippet": "A product list for stainless steel lunch containers.",
+        "relevance": 0,
+        "reason": "Wrong product type."
+      }
+    ]
+  },
+  {
+    "id": "S11",
+    "query": "കേരളത്തിലെ മഴക്കാല യാത്രാ സുരക്ഷാ നിർദ്ദേശങ്ങൾ",
+    "intent": "informational",
+    "locale": "ml-IN",
+    "reference_rationale": "The query requests general safety information for traveling in Kerala during the monsoon.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "കേരളത്തിലെ മഴക്കാല യാത്രാ സുരക്ഷ",
+        "snippet": "റോഡ്, മലനിര, കടൽത്തീരം എന്നിവിടങ്ങളിലെ സാങ്കൽപ്പിക സുരക്ഷാ നിർദ്ദേശങ്ങൾ.",
+        "relevance": 3,
+        "reason": "Directly addresses monsoon travel safety in Kerala."
+      },
+      {
+        "id": "r2",
+        "title": "കേരള യാത്രയ്ക്കുള്ള പൊതുവായ പാക്കിംഗ് പട്ടിക",
+        "snippet": "വസ്ത്രങ്ങൾ, മരുന്നുകൾ, ഉപകരണങ്ങൾ എന്നിവയ്ക്കുള്ള യാത്രാ തയ്യാറെടുപ്പ് പട്ടിക.",
+        "relevance": 2,
+        "reason": "Useful travel preparation but not specifically safety guidance."
+      },
+      {
+        "id": "r3",
+        "title": "മഴക്കാല യാത്രാ സുരക്ഷ: പശ്ചിമഘട്ടം",
+        "snippet": "പശ്ചിമഘട്ടത്തിലെ മഴക്കാല യാത്രയെക്കുറിച്ചുള്ള പൊതുവായ ലേഖനം.",
+        "relevance": 2,
+        "reason": "Relevant regional safety information but less specifically Kerala-wide."
+      },
+      {
+        "id": "r4",
+        "title": "ശീതകാല യാത്രാ നിർദ്ദേശങ്ങൾ രാജസ്ഥാനിലേക്ക്",
+        "snippet": "രാജസ്ഥാനിലെ ശീതകാല യാത്രയ്ക്കുള്ള സാങ്കൽപ്പിക നിർദ്ദേശങ്ങൾ.",
+        "relevance": 0,
+        "reason": "Wrong season, language context, and location."
+      }
+    ]
+  },
+  {
+    "id": "S12",
+    "query": "Python requests timeout keeps happening",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The user wants troubleshooting information for repeated timeout behavior in a Python HTTP client.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Troubleshooting Python Requests Timeouts",
+        "snippet": "Covers timeout parameters, retry boundaries, response checks, and diagnostic logging.",
+        "relevance": 3,
+        "reason": "Directly addresses repeated timeout errors in the named library."
+      },
+      {
+        "id": "r2",
+        "title": "Python Requests Authentication Errors",
+        "snippet": "Explains common causes of unauthorized and forbidden responses.",
+        "relevance": 1,
+        "reason": "Same library but a different failure category."
+      },
+      {
+        "id": "r3",
+        "title": "HTTP Client Timeout Concepts",
+        "snippet": "Defines connection and read timeouts across common programming clients.",
+        "relevance": 2,
+        "reason": "Useful general background, though not Python-specific."
+      },
+      {
+        "id": "r4",
+        "title": "Python String Formatting Reference",
+        "snippet": "Examples of f-strings and formatting expressions.",
+        "relevance": 0,
+        "reason": "Unrelated Python topic."
+      }
+    ]
+  },
+  {
+    "id": "S13",
+    "query": "Malayalam news headlines today",
+    "intent": "navigational",
+    "locale": "ml-IN",
+    "reference_rationale": "The user likely seeks a Malayalam news headline section or current-news landing page; the synthetic corpus cannot provide live updates.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "ഇന്നത്തെ മലയാളം വാർത്താ തലക്കെട്ടുകൾ",
+        "snippet": "സാങ്കൽപ്പിക മീഡിയ കോർപ്പസിലെ തീയതി-അടയാളപ്പെടുത്തിയ തലക്കെട്ടുകളുടെ വിഭാഗം.",
+        "relevance": 3,
+        "reason": "Exact language and headline-navigation match, while remaining clearly synthetic."
+      },
+      {
+        "id": "r2",
+        "title": "മലയാളം വാർത്താ വിഭാഗങ്ങളുടെ പട്ടിക",
+        "snippet": "രാഷ്ട്രീയം, സംസ്കാരം, കായികം തുടങ്ങിയ വാർത്താ വിഭാഗങ്ങളുടെ സൂചിക.",
+        "relevance": 2,
+        "reason": "Useful news navigation but not specifically the current-headline page."
+      },
+      {
+        "id": "r3",
+        "title": "ഇന്നത്തെ കന്നഡ വാർത്തകൾ",
+        "snippet": "കന്നഡ ഭാഷയിലെ സാങ്കൽപ്പിക വാർത്താ തലക്കെട്ടുകൾ.",
+        "relevance": 1,
+        "reason": "Matches recency and news format but has the wrong language."
+      },
+      {
+        "id": "r4",
+        "title": "മലയാളം സിനിമാ ഗാന ശേഖരം",
+        "snippet": "പഴയ സിനിമാഗാനങ്ങളെക്കുറിച്ചുള്ള മീഡിയ രേഖകൾ.",
+        "relevance": 0,
+        "reason": "Malayalam media is present, but the news intent is absent."
+      }
+    ]
+  },
+  {
+    "id": "S14",
+    "query": "Kerala PSC exam calendar 2022",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query requests a dated examination calendar, so freshness and year matching are important.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kerala PSC Examination Calendar 2022",
+        "snippet": "A fictional archived calendar organized by examination month and category.",
+        "relevance": 3,
+        "reason": "Exact organization, service, and year match."
+      },
+      {
+        "id": "r2",
+        "title": "Kerala PSC Examination Calendar 2024",
+        "snippet": "A newer fictional calendar for a different examination year.",
+        "relevance": 1,
+        "reason": "Same organization and topic but wrong requested year."
+      },
+      {
+        "id": "r3",
+        "title": "Kerala PSC Application Instructions",
+        "snippet": "General guidance on registration and application workflow.",
+        "relevance": 2,
+        "reason": "Useful related information but not a calendar."
+      },
+      {
+        "id": "r4",
+        "title": "Kerala University Academic Calendar 2022",
+        "snippet": "A fictional university schedule for semesters and holidays.",
+        "relevance": 1,
+        "reason": "Correct year and region but wrong institution and purpose."
+      }
+    ]
+  },
+  {
+    "id": "S15",
+    "query": "best Python IDE for beginners on Windows",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The user is evaluating software choices for a beginner Windows setup.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Beginner Python IDE Comparison for Windows",
+        "snippet": "Compares fictional editor options by setup effort, learning features, and operating-system support.",
+        "relevance": 3,
+        "reason": "Matches audience, language, platform, and comparison intent."
+      },
+      {
+        "id": "r2",
+        "title": "Installing Python on Windows",
+        "snippet": "A setup guide covering interpreter installation and command-line checks.",
+        "relevance": 2,
+        "reason": "Useful prerequisite information but not an IDE comparison."
+      },
+      {
+        "id": "r3",
+        "title": "Python IDEs for Linux Developers",
+        "snippet": "A fictional comparison focused on Linux workflows.",
+        "relevance": 1,
+        "reason": "Relevant software category but wrong operating system."
+      },
+      {
+        "id": "r4",
+        "title": "Best JavaScript Editors for Beginners",
+        "snippet": "A guide to editors used for introductory JavaScript development.",
+        "relevance": 0,
+        "reason": "Wrong programming language."
+      }
+    ]
+  },
+  {
+    "id": "S16",
+    "query": "Munnar two day itinerary without trekking",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query seeks a practical Kerala trip plan constrained by duration and activity preference.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Munnar Two-Day Relaxed Itinerary",
+        "snippet": "A fictional schedule featuring viewpoints, gardens, local food, and low-effort activities.",
+        "relevance": 3,
+        "reason": "Matches destination, duration, and avoidance of trekking."
+      },
+      {
+        "id": "r2",
+        "title": "Munnar Trekking Trails",
+        "snippet": "Descriptions of demanding walking routes around Munnar.",
+        "relevance": 1,
+        "reason": "Correct destination but conflicts with the no-trekking constraint."
+      },
+      {
+        "id": "r3",
+        "title": "Munnar Weekend Travel Planner",
+        "snippet": "General two- or three-day planning suggestions for the hill station.",
+        "relevance": 2,
+        "reason": "Useful partial itinerary guidance without the specific activity filter."
+      },
+      {
+        "id": "r4",
+        "title": "Alappuzha Houseboat Schedule",
+        "snippet": "A fictional schedule for a backwater trip in another Kerala destination.",
+        "relevance": 0,
+        "reason": "Wrong destination and itinerary type."
+      }
+    ]
+  },
+  {
+    "id": "S17",
+    "query": "Python indentation error in nested if statement",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query asks for debugging help with Python whitespace and control-flow syntax.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Fixing Python IndentationError in Nested Conditions",
+        "snippet": "Shows how consistent indentation and block alignment affect nested if statements.",
+        "relevance": 3,
+        "reason": "Directly addresses the named error and code structure."
+      },
+      {
+        "id": "r2",
+        "title": "Python if, elif, and else Syntax",
+        "snippet": "Introduces conditional syntax with short examples.",
+        "relevance": 2,
+        "reason": "Provides relevant foundational knowledge but less targeted debugging."
+      },
+      {
+        "id": "r3",
+        "title": "Python Tab and Space Style Guide",
+        "snippet": "Discusses mixed tabs, spaces, and editor configuration.",
+        "relevance": 2,
+        "reason": "Useful partial fix for a common indentation cause."
+      },
+      {
+        "id": "r4",
+        "title": "Python File Handling Exceptions",
+        "snippet": "Explains file-not-found and permission errors.",
+        "relevance": 0,
+        "reason": "Unrelated exception category."
+      }
+    ]
+  },
+  {
+    "id": "S18",
+    "query": "കേരളത്തിൽ ഡ്രൈവിംഗ് ലൈസൻസ് പുതുക്കൽ",
+    "intent": "transactional",
+    "locale": "ml-IN",
+    "reference_rationale": "The Malayalam query seeks a public-service transaction for renewing a driving licence in Kerala.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "കേരള ഡ്രൈവിംഗ് ലൈസൻസ് പുതുക്കൽ സേവനം",
+        "snippet": "ലൈസൻസ് പുതുക്കുന്നതിനുള്ള സാങ്കൽപ്പിക അപേക്ഷാ ഘട്ടങ്ങളും ആവശ്യമായ വിഭാഗങ്ങളും.",
+        "relevance": 3,
+        "reason": "Directly matches the service, action, and state."
+      },
+      {
+        "id": "r2",
+        "title": "ഡ്രൈവിംഗ് ലൈസൻസ് വിലാസം മാറ്റൽ",
+        "snippet": "ലൈസൻസിലെ വിലാസ വിവരങ്ങൾ തിരുത്തുന്നതിനുള്ള പൊതുവിവരം.",
+        "relevance": 1,
+        "reason": "Related licence service but not renewal."
+      },
+      {
+        "id": "r3",
+        "title": "കേരള മോട്ടോർ വാഹന സേവനങ്ങളുടെ പട്ടിക",
+        "snippet": "വാഹന രജിസ്ട്രേഷൻ, പെർമിറ്റ്, ലൈസൻസ് തുടങ്ങിയ സേവനങ്ങളുടെ സൂചിക.",
+        "relevance": 2,
+        "reason": "Useful broader service navigation without renewal-specific detail."
+      },
+      {
+        "id": "r4",
+        "title": "പാസ്പോർട്ട് പുതുക്കൽ മാർഗ്ഗനിർദ്ദേശം",
+        "snippet": "പാസ്പോർട്ട് പുതുക്കുന്നതിനുള്ള സാങ്കൽപ്പിക പൊതുവിവരം.",
+        "relevance": 0,
+        "reason": "Wrong document and service system."
+      }
+    ]
+  },
+  {
+    "id": "S19",
+    "query": "Malayalam radio programs for classical music",
+    "intent": "navigational",
+    "locale": "en-IN",
+    "reference_rationale": "The user is trying to locate Malayalam-language radio programming focused on classical music.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Malayalam Classical Music Radio Programs",
+        "snippet": "A fictional media directory of Malayalam radio shows organized by music style and schedule.",
+        "relevance": 3,
+        "reason": "Matches language, medium, and musical focus."
+      },
+      {
+        "id": "r2",
+        "title": "Indian Classical Music Listening Guide",
+        "snippet": "Background on classical traditions and listening formats.",
+        "relevance": 2,
+        "reason": "Relevant subject matter but not a Malayalam radio directory."
+      },
+      {
+        "id": "r3",
+        "title": "Malayalam Podcast Recommendations",
+        "snippet": "A directory of fictional Malayalam spoken-audio programs.",
+        "relevance": 1,
+        "reason": "Correct language and audio medium broadly, but wrong program type."
+      },
+      {
+        "id": "r4",
+        "title": "English Pop Radio Schedule",
+        "snippet": "A fictional schedule for English-language popular music.",
+        "relevance": 0,
+        "reason": "Wrong language and music focus."
+      }
+    ]
+  },
+  {
+    "id": "S20",
+    "query": "cheap ergonomic office chair with adjustable lumbar support",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query expresses product purchase intent with comfort features and an implied affordability preference.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Affordable Ergonomic Chairs with Adjustable Lumbar Support",
+        "snippet": "A fictional comparison of office chairs by lumbar adjustment, seat height, and price band.",
+        "relevance": 3,
+        "reason": "Matches product type, affordability, and required feature."
+      },
+      {
+        "id": "r2",
+        "title": "Office Chair Ergonomics Guide",
+        "snippet": "Explains posture, seat depth, armrests, and back support.",
+        "relevance": 2,
+        "reason": "Useful buying information but not a product-focused shortlist."
+      },
+      {
+        "id": "r3",
+        "title": "Premium Gaming Chairs with Lumbar Cushions",
+        "snippet": "A fictional catalog of gaming chairs with removable cushions.",
+        "relevance": 1,
+        "reason": "Has lumbar support but differs in chair category and affordability."
+      },
+      {
+        "id": "r4",
+        "title": "Adjustable Standing Desks",
+        "snippet": "A product guide for height-adjustable desks.",
+        "relevance": 0,
+        "reason": "Related office furniture but not chairs."
+      }
+    ]
+  },
+  {
+    "id": "S21",
+    "query": "Kozhikode biryani food trail",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query requests a destination-specific culinary guide in Kerala.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kozhikode Biryani Food Trail",
+        "snippet": "A fictional walking and tasting guide organized around local biryani styles and neighborhoods.",
+        "relevance": 3,
+        "reason": "Exact destination and food-trail match."
+      },
+      {
+        "id": "r2",
+        "title": "Malabar Cuisine Overview",
+        "snippet": "Introduces dishes, ingredients, and culinary traditions from the Malabar region.",
+        "relevance": 2,
+        "reason": "Useful regional context but not a focused trail."
+      },
+      {
+        "id": "r3",
+        "title": "Kochi Seafood Restaurant Guide",
+        "snippet": "A fictional guide to seafood eateries in Kochi.",
+        "relevance": 1,
+        "reason": "Food tourism is related, but both city and dish differ."
+      },
+      {
+        "id": "r4",
+        "title": "Kozhikode Museum Visitor Notes",
+        "snippet": "Information about fictional museum exhibits in Kozhikode.",
+        "relevance": 0,
+        "reason": "Correct city but unrelated activity."
+      }
+    ]
+  },
+  {
+    "id": "S22",
+    "query": "Python virtual environment not activating in PowerShell",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query seeks troubleshooting for a Python environment activation problem in a named shell.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Python Virtual Environment Activation in PowerShell",
+        "snippet": "Covers environment paths, shell commands, and common activation messages in PowerShell.",
+        "relevance": 3,
+        "reason": "Directly matches Python, virtual environments, PowerShell, and activation."
+      },
+      {
+        "id": "r2",
+        "title": "PowerShell Execution Policy Concepts",
+        "snippet": "Explains how shell policy settings can affect scripts.",
+        "relevance": 2,
+        "reason": "Useful partial diagnostic context for activation failures."
+      },
+      {
+        "id": "r3",
+        "title": "Activating Python Environments in Bash",
+        "snippet": "Instructions for environment activation in Unix-like shells.",
+        "relevance": 1,
+        "reason": "Same general task but wrong shell."
+      },
+      {
+        "id": "r4",
+        "title": "Python Package Version Pinning",
+        "snippet": "Explains requirements files and dependency version ranges.",
+        "relevance": 0,
+        "reason": "Python environment topic but not activation troubleshooting."
+      }
+    ]
+  },
+  {
+    "id": "S23",
+    "query": "Kerala ration card address change process",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query requests steps for updating an address in a Kerala public-distribution record.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kerala Ration Card Address Change",
+        "snippet": "A fictional service guide describing update stages, record checks, and submission options.",
+        "relevance": 3,
+        "reason": "Exact match for document, location, and requested change."
+      },
+      {
+        "id": "r2",
+        "title": "Kerala Ration Card Member Addition",
+        "snippet": "Guidance for adding an eligible household member to a ration record.",
+        "relevance": 1,
+        "reason": "Same document system but different transaction."
+      },
+      {
+        "id": "r3",
+        "title": "Kerala Public Distribution Services",
+        "snippet": "An overview of fictional ration-related services and terminology.",
+        "relevance": 2,
+        "reason": "Relevant service context but not address-change instructions."
+      },
+      {
+        "id": "r4",
+        "title": "Tamil Nadu Voter Address Update",
+        "snippet": "A fictional guide for an electoral record update in another state.",
+        "relevance": 0,
+        "reason": "Wrong state and document type."
+      }
+    ]
+  },
+  {
+    "id": "S24",
+    "query": "ഇന്നത്തെ മലയാളം സ്പോർട്സ് വാർത്തകൾ",
+    "intent": "informational",
+    "locale": "ml-IN",
+    "reference_rationale": "The query asks for current sports news in Malayalam; the synthetic corpus should distinguish matching language from stale or unrelated entries.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "മലയാളം സ്പോർട്സ് വാർത്തകൾ: ഇന്നത്തെ വിഭാഗം",
+        "snippet": "സാങ്കൽപ്പിക മീഡിയ സൂചികയിലെ തീയതി-അടയാളപ്പെടുത്തിയ കായിക തലക്കെട്ടുകൾ.",
+        "relevance": 3,
+        "reason": "Matches language, topic, and same-day navigation intent within the synthetic corpus."
+      },
+      {
+        "id": "r2",
+        "title": "2021ലെ മലയാളം കായിക വാർത്താ ശേഖരം",
+        "snippet": "പഴയ തീയതികളിൽ നിന്നുള്ള കായിക വാർത്താ രേഖകളുടെ ശേഖരം.",
+        "relevance": 1,
+        "reason": "Correct language and topic but stale for a today-focused query."
+      },
+      {
+        "id": "r3",
+        "title": "മലയാളം സിനിമാ വാർത്തകൾ",
+        "snippet": "സിനിമാ റിലീസുകളും അഭിനേതാക്കളും സംബന്ധിച്ച സാങ്കൽപ്പിക വാർത്തകൾ.",
+        "relevance": 1,
+        "reason": "Correct language and news format but wrong subject."
+      },
+      {
+        "id": "r4",
+        "title": "English Sports Results Archive",
+        "snippet": "An English-language archive of fictional sports result summaries.",
+        "relevance": 0,
+        "reason": "Wrong language and not a current Malayalam news section."
+      }
+    ]
+  },
+  {
+    "id": "S25",
+    "query": "Python JSONDecodeError unexpected character",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query names a Python parsing exception and a common error message fragment.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Fixing Python JSONDecodeError Unexpected Character",
+        "snippet": "Explains malformed commas, quotes, trailing data, and inspecting the failing character position.",
+        "relevance": 3,
+        "reason": "Directly matches the exception and message."
+      },
+      {
+        "id": "r2",
+        "title": "Python JSON Loading and Validation",
+        "snippet": "Introduces loading JSON strings, validating structure, and handling parse failures.",
+        "relevance": 2,
+        "reason": "Useful general guidance but less focused on the specific message."
+      },
+      {
+        "id": "r3",
+        "title": "Python UnicodeDecodeError Troubleshooting",
+        "snippet": "Discusses text encoding problems when reading files.",
+        "relevance": 1,
+        "reason": "Similar error-handling context but a different exception."
+      },
+      {
+        "id": "r4",
+        "title": "JavaScript JSON Parsing Examples",
+        "snippet": "Examples of parsing JSON in JavaScript.",
+        "relevance": 0,
+        "reason": "Wrong programming language."
+      }
+    ]
+  },
+  {
+    "id": "S26",
+    "query": "Wayanad family resort with pool",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query seeks accommodation in a Kerala destination with a family suitability and pool feature filter.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Wayanad Family Resorts with Swimming Pools",
+        "snippet": "A fictional lodging shortlist categorized by family facilities, pool access, and room types.",
+        "relevance": 3,
+        "reason": "Matches destination, accommodation type, audience, and feature."
+      },
+      {
+        "id": "r2",
+        "title": "Wayanad Family Travel Planner",
+        "snippet": "Suggests family-friendly attractions, travel durations, and packing considerations.",
+        "relevance": 2,
+        "reason": "Useful destination planning but not a resort shortlist."
+      },
+      {
+        "id": "r3",
+        "title": "Wayanad Homestays Without Pool Facilities",
+        "snippet": "A fictional directory of small homestays focused on quiet stays.",
+        "relevance": 1,
+        "reason": "Correct destination and lodging category but misses the pool requirement."
+      },
+      {
+        "id": "r4",
+        "title": "Thekkady Poolside Hotels",
+        "snippet": "A fictional hotel listing for a different Kerala destination.",
+        "relevance": 1,
+        "reason": "Matches lodging and pool but has the wrong location."
+      }
+    ]
+  },
+  {
+    "id": "S27",
+    "query": "Kerala university scholarship application deadline",
+    "intent": "informational",
+    "locale": "en-IN",
+    "reference_rationale": "The query seeks time-sensitive education funding information, but lacks a university name; broad matching is only partially satisfactory.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Kerala University Scholarship Deadline Bulletin",
+        "snippet": "A fictional bulletin listing scholarship windows for a named university and academic cycle.",
+        "relevance": 2,
+        "reason": "Useful partial match, though the query does not specify which university or cycle."
+      },
+      {
+        "id": "r2",
+        "title": "Kerala Student Scholarship Application Guide",
+        "snippet": "General guidance on scholarship categories, eligibility, and application preparation.",
+        "relevance": 2,
+        "reason": "Relevant procedural information but no single deadline."
+      },
+      {
+        "id": "r3",
+        "title": "University Scholarship Deadlines 2021",
+        "snippet": "An archived fictional deadline table from an earlier academic year.",
+        "relevance": 1,
+        "reason": "Topic matches but the information is stale without a requested year."
+      },
+      {
+        "id": "r4",
+        "title": "Kerala University Examination Timetable",
+        "snippet": "A fictional timetable for university examinations.",
+        "relevance": 1,
+        "reason": "Same education context but not scholarship applications."
+      }
+    ]
+  },
+  {
+    "id": "S28",
+    "query": "മലയാളം പത്രത്തിലെ കാലാവസ്ഥാ പേജ്",
+    "intent": "navigational",
+    "locale": "ml-IN",
+    "reference_rationale": "The query seeks a Malayalam newspaper weather section rather than general weather science information.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "മലയാളം പത്രം കാലാവസ്ഥാ പേജ്",
+        "snippet": "സാങ്കൽപ്പിക പത്രം കോർപ്പസിലെ കാലാവസ്ഥാ വിഭാഗത്തിലേക്കുള്ള നാവിഗേഷൻ രേഖ.",
+        "relevance": 3,
+        "reason": "Directly matches the requested Malayalam newspaper section."
+      },
+      {
+        "id": "r2",
+        "title": "കേരളത്തിലെ കാലാവസ്ഥാ വിവരങ്ങൾ",
+        "snippet": "കേരളത്തിലെ വിവിധ പ്രദേശങ്ങളിലെ കാലാവസ്ഥയെക്കുറിച്ചുള്ള പൊതുവിവരം.",
+        "relevance": 2,
+        "reason": "Relevant weather content but not a newspaper page."
+      },
+      {
+        "id": "r3",
+        "title": "മലയാളം പത്രത്തിലെ കായിക പേജ്",
+        "snippet": "സാങ്കൽപ്പിക പത്രത്തിലെ കായിക വാർത്താ വിഭാഗം.",
+        "relevance": 1,
+        "reason": "Correct media format and language but wrong section."
+      },
+      {
+        "id": "r4",
+        "title": "Hindi Newspaper Weather Page",
+        "snippet": "A fictional weather section from a Hindi newspaper corpus.",
+        "relevance": 0,
+        "reason": "Wrong language."
+      }
+    ]
+  },
+  {
+    "id": "S29",
+    "query": "noise cancelling earbuds for calls under 3000",
+    "intent": "transactional",
+    "locale": "en-IN",
+    "reference_rationale": "The query indicates a product purchase with a price ceiling and call-quality feature preference.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Noise-Cancelling Earbuds Under ₹3,000 for Calls",
+        "snippet": "A fictional comparison of earbuds by microphone performance, noise reduction, battery life, and price band.",
+        "relevance": 3,
+        "reason": "Matches product, budget, noise cancellation, and call use."
+      },
+      {
+        "id": "r2",
+        "title": "Wireless Earbuds Buying Guide",
+        "snippet": "Discusses fit, codecs, battery life, microphones, and charging cases.",
+        "relevance": 2,
+        "reason": "Useful product-selection advice without the requested price-filtered shortlist."
+      },
+      {
+        "id": "r3",
+        "title": "Noise-Cancelling Headphones Under ₹3,000",
+        "snippet": "A fictional list of over-ear headphones within the stated budget.",
+        "relevance": 1,
+        "reason": "Matches budget and noise cancellation but not the earbud form factor."
+      },
+      {
+        "id": "r4",
+        "title": "Bluetooth Speakers for Outdoor Parties",
+        "snippet": "A product comparison for portable speakers.",
+        "relevance": 0,
+        "reason": "Wrong product type and use case."
+      }
+    ]
+  },
+  {
+    "id": "S30",
+    "query": "how to read a CSV with Malayalam text in Python",
+    "intent": "informational",
+    "locale": "ml-IN",
+    "reference_rationale": "The query combines Python file handling with Malayalam text encoding and is best served by a practical technical explanation.",
+    "results": [
+      {
+        "id": "r1",
+        "title": "Reading Malayalam CSV Text in Python",
+        "snippet": "Explains encoding selection, delimiter checks, and displaying Malayalam text in a Python table.",
+        "relevance": 3,
+        "reason": "Directly matches language, file format, and programming task."
+      },
+      {
+        "id": "r2",
+        "title": "Python CSV Module Basics",
+        "snippet": "Introduces readers, writers, delimiters, and header handling.",
+        "relevance": 2,
+        "reason": "Useful partial guidance but does not focus on Malayalam encoding."
+      },
+      {
+        "id": "r3",
+        "title": "Reading UTF-8 Text Files in Java",
+        "snippet": "Discusses character encoding when opening text files in Java.",
+        "relevance": 1,
+        "reason": "Encoding is related, but the language and file workflow differ."
+      },
+      {
+        "id": "r4",
+        "title": "Malayalam Keyboard Layout Guide",
+        "snippet": "Describes fictional keyboard layouts for entering Malayalam text.",
+        "relevance": 0,
+        "reason": "Malayalam-related but unrelated to reading CSV files with Python."
+      }
+    ]
+  }
+]
