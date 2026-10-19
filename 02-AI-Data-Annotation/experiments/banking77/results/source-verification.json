@@ -1,0 +1,27 @@
+[
+  {
+    "bytes": 839073,
+    "path": "data/raw/train.csv",
+    "status": "SHA256_VERIFIED"
+  },
+  {
+    "bytes": 239961,
+    "path": "data/raw/test.csv",
+    "status": "SHA256_VERIFIED"
+  },
+  {
+    "bytes": 2036,
+    "path": "data/raw/categories.json",
+    "status": "SHA256_VERIFIED"
+  },
+  {
+    "bytes": 18650,
+    "path": "source/BANKING77_LICENSE.txt",
+    "status": "SHA256_VERIFIED"
+  },
+  {
+    "bytes": 4735,
+    "path": "source/UPSTREAM_README.md",
+    "status": "SHA256_VERIFIED"
+  }
+]
