@@ -1,19 +1,19 @@
 # GitHub Profile README Recommendation
 
 ## Profile copy
-Hi, I’m Sinshad PS, a Computer Science Engineering student at JCT Institutions (expected 2027). I am learning AI evaluation, data QA, and basic Python through reproducible personal portfolio projects.
+Hi, I’m Sinshad PS, a Computer Science & Engineering student expected to graduate in 2027. I’m interested in AI training, data annotation, evaluation QA, and Malayalam–English language work.
 
-- Malayalam: native (self-reported)
-- English: professional (self-reported)
-- Current focus: evaluation rubrics, annotation QA, metrics, review workflows
-- Contact: sinshadsirajudheenpriv@gmail.com
+- Location: Kerala, India · open to remote opportunities
+- Malayalam and English transcription contributor
+- Python fundamentals; Git/GitHub; Jupyter; structured data
+- AI-assisted portfolio: two public-data studies plus six synthetic demonstrations
 
-## Current monorepo
-**AI-Generalist-Portfolio** — six AI-assisted synthetic evaluation projects with local analysis, tests, evidence queues, and an offline website.
+## Featured repository
+[AI Evaluation & Data Quality Portfolio](https://github.com/sinshad-ops/sinshad--portfolio) — source-attributed public-data experiments, synthetic evaluation demonstrations, reproducible metrics, and documented limitations.
 
-Recommended description: `Reproducible AI evaluation and data-QA portfolio: six synthetic projects, transparent baselines, review queues, tests, and offline evidence.`
+**Resume:** [View the exact selected PDF](https://github.com/sinshad-ops/sinshad--portfolio/blob/main/resume.pdf).
 
-Recommended topics: `ai-evaluation`, `data-annotation`, `quality-assurance`, `python`, `nlp`, `search-relevance`, `multimodal`, `portfolio`
+## Suggested topics
+`ai-evaluation`, `data-annotation`, `quality-assurance`, `python`, `nlp`, `search-relevance`, `multimodal`, `portfolio`.
 
-## Pinning
-Pin the one existing monorepo. Do not imply that separate project repositories exist unless they are actually created.
+This is draft copy; use only claims you can explain and support.
