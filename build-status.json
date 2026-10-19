@@ -1,0 +1,10 @@
+{
+  "status": "complete_local_release",
+  "date": "2026-10-09",
+  "synthetic_baselines": 6,
+  "real_public_data_studies": 2,
+  "test_count": 28,
+  "validation": "PASS",
+  "personal_human_review_claimed": false,
+  "externally_published": false
+}
