@@ -73,7 +73,7 @@ See [findings](results/findings.md) and the raw review queue.
 - [Source, methodology and reproduction](experiments/hh-preference/README.md)
 - [Actual results and bias limits](experiments/hh-preference/results/REPORT.md)
 - [Operational BANKING77 audit](../02-AI-Data-Annotation/experiments/banking77/results/QA_CASE_STUDY.md)
-- [Practical review playbook](../QUALITY_REVIEW_PLAYBOOK.md)
+- [Practical review playbook](QUALITY_REVIEW_PLAYBOOK.md)
 
 The portfolio contains **two real public-data studies plus six synthetic baseline demonstrations**. The original authors supplied public labels; personal review fields remain blank.
 
