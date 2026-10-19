@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.ipynb_checkpoints/
+~$*.docx
+
+# Public-source caches are not bundled
+**/data/cache/
+__pycache__/
+*.pyc
